@@ -31,8 +31,10 @@
 	}
 </script>
 
-<div class="fixed top-0 left-0 flex flex-col  w-full   z-10">
-	<div class="flex bg-gray-200 whitespace-nowrap items-end overflow-x-auto">
+<div
+	class="fixed top-0 left-0 flex flex-col w-full   z-10 md:relative md:w-64 md:h-screen md:bg-gray-200 border-b"
+>
+	<div class="flex md:flex-col bg-gray-200 whitespace-nowrap items-end overflow-x-auto">
 		<span class="font-semibold px-2 py-4">Types of Inhalers</span>
 
 		{#each inhalerTypes as inhalerType}

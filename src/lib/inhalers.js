@@ -114,9 +114,7 @@ export const defaultInhalers = [
 		type: 'Dry powder inhaler',
 		frequency: 'Once daily',
 		image: '/Asmanex Twisthaler.png',
-		url: '',
-		comment:
-			'Twisthaler uses a twisting motion for delivery. ![youtube](https://www.youtube.com/watch?v=Vsiz8GnSmiM)'
+		url: ''
 	},
 	{
 		'brand name': 'Flovent Diskus',
@@ -215,17 +213,18 @@ export const defaultInhalers = [
 		type: 'Metered dose inhaler',
 		frequency: 'Twice daily',
 		image: '/Symbicort.jpg',
-		url: 'https://www.mysymbicort.com/'
+		url: 'https://www.mysymbicort.com/',
+		comment: `<p>With formoterol's fast onset of action, Symbicort can be used both PRN and as maintenaince medication.</p>`
 	},
 	{
 		'brand name': 'Wixela',
 		generic: 'fluticasone-propionate',
 		composition: 'ICS-LABA',
-		type: 'Metered dose inhaler',
+		type: 'Dry powder inhaler',
 		frequency: 'Twice daily',
 		image: '/Wixela.png',
 		url: 'https://www.wixela.com/',
-		comment: 'Wixela is the ICS-LABA choice at VA.'
+		comment: '<p>Wixela is the ICS-LABA choice at VA.</p>'
 	},
 	{
 		'brand name': 'Anoro Ellipta',
@@ -330,7 +329,7 @@ export const defaultInhalers = [
 		'brand name': 'Combivent Respimat',
 		generic: 'ipratropium-albuterol',
 		composition: 'SABA-SAMA',
-		type: 'Metered dose inhaler and nebulizing solution',
+		type: 'Metered dose inhaler',
 		frequency: 'As needed',
 		image: '/Combivent Respimat.jpg',
 		url: 'https://www.combivent.com/'
