@@ -8,7 +8,7 @@
 	<Side />
 
 	<div
-		class="px-10 pt-8 pb-10 grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-4 overflow-y-auto mt-12 z-0"
+		class="px-10 pt-10 pb-10 grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-4 overflow-y-auto mt-12 z-0"
 	>
 		{#each $inhalers as inhaler}
 			<a href="/i/{inhaler['brand name']}" in:fade class="flex flex-col">

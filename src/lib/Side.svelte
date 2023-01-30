@@ -1,12 +1,14 @@
 <script lang="ts">
 	import { inhalers } from '$lib/store.js';
 	import { defaultInhalers } from '$lib/inhalers';
+	import Search from '$lib/Search.svelte';
 
 	let current = 'All';
 	let inhalerTypes = [
 		'All',
 		'SABA',
 		'SAMA',
+		'SABA-SAMA',
 		'LABA',
 		'LAMA',
 		'LABA-LAMA',
@@ -29,20 +31,21 @@
 	}
 </script>
 
-<div
-	class="fixed top-0 left-0 flex md:flex-col bg-gray-200 rounded-l-md md:w-64 whitespace-nowrap w-full overflow-x-auto items-end z-10"
->
-	<span class="font-semibold px-2 py-4">Types of Inhalers</span>
+<div class="fixed top-0 left-0 flex flex-col  w-full   z-10">
+	<div class="flex bg-gray-200 whitespace-nowrap items-end overflow-x-auto">
+		<span class="font-semibold px-2 py-4">Types of Inhalers</span>
 
-	{#each inhalerTypes as inhalerType}
-		<div
-			class="px-2 py-4 cursor-pointer"
-			class:selected={current === inhalerType}
-			on:click={() => selectByComposition(inhalerType)}
-		>
-			{inhalerType}
-		</div>
-	{/each}
+		{#each inhalerTypes as inhalerType}
+			<div
+				class="px-2 py-4 cursor-pointer"
+				class:selected={current === inhalerType}
+				on:click={() => selectByComposition(inhalerType)}
+			>
+				{inhalerType}
+			</div>
+		{/each}
+	</div>
+	<!-- <Search /> -->
 </div>
 
 <style>

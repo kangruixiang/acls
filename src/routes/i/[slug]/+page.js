@@ -5,7 +5,5 @@ export function load({ params }) {
 		return params.slug === inhaler['brand name'];
 	})[0];
 
-	console.log('inhaler is ', inhaler);
-
 	return { inhaler };
 }
