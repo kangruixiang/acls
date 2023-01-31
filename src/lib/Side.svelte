@@ -32,14 +32,14 @@
 </script>
 
 <div
-	class="fixed top-0 left-0 flex flex-col w-full z-10 md:relative md:w-64 md:h-screen bg-[#008A94] border-b text-white"
+	class="fixed top-0 left-0 z-10 flex w-full flex-col border-b bg-[#008A94] text-white md:relative md:min-h-screen md:w-64"
 >
-	<div class="flex md:flex-col   whitespace-nowrap items-end overflow-x-auto ">
-		<span class="font-semibold px-2 py-4">Types of Inhalers</span>
+	<div class="flex items-end overflow-x-auto whitespace-nowrap md:flex-col ">
+		<span class="px-2 py-4 font-semibold">Types of Inhalers</span>
 
 		{#each inhalerTypes as inhalerType}
 			<div
-				class="px-2 py-4 cursor-pointer text-white hover:bg-[#0896a0]  active:bg-[#0d9ba5] bg-[#008A94] w-full md:text-right md:px-6 "
+				class="w-full cursor-pointer bg-[#008A94] px-2 py-4  text-white hover:bg-[#0896a0] active:bg-[#0d9ba5] md:px-6 md:text-right "
 				class:selected={current === inhalerType}
 				on:click={() => selectByComposition(inhalerType)}
 			>
@@ -47,7 +47,6 @@
 			</div>
 		{/each}
 	</div>
-	<!-- <Search /> -->
 </div>
 
 <style>

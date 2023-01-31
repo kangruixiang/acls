@@ -3,11 +3,7 @@
 </script>
 
 <div class="md:flex">
-	<div>
-		<Back />
-	</div>
+	<Back />
 
-	<div class="md:w-2/3">
-		<slot />
-	</div>
+	<div class="overflow-y-auto md:w-[100%]"><slot /></div>
 </div>

@@ -6,16 +6,16 @@
 	const comment = `# this is a test`;
 </script>
 
-<div class="mx-4 mt-20 flex flex-col space-y-4">
-	<div class="aspect-w-3 aspect-h-2 ">
-		<img src={data.inhaler['image']} alt="" class="bg-white object-contain rounded-md border" />
+<div class="mx-4 mb-20 flex  h-screen max-w-xl flex-col space-y-4 pt-20 md:mx-auto">
+	<div class="aspect-w-3 aspect-h-2">
+		<img src={data.inhaler['image']} alt="" class="rounded-md border bg-white object-contain" />
 	</div>
 
 	<h1 class="text-lg font-semibold">
 		{data.inhaler['brand name']}
 	</h1>
 
-	<table class="table-auto w-full">
+	<table class="w-full table-auto">
 		<tr>
 			<th />
 			<th />
@@ -33,7 +33,7 @@
 			<td class="text-right"> {data.inhaler['frequency']}</td>
 		</tr>
 		<tr>
-			<td class="font-semibold flex items-center space-x-1  whitespace-nowrap">
+			<td class="flex items-center space-x-1 whitespace-nowrap  font-semibold">
 				<span>Inhaler Type</span>
 				<a href="/type">
 					<svg
@@ -42,7 +42,7 @@
 						viewBox="0 0 24 24"
 						stroke-width="1.5"
 						stroke="currentColor"
-						class="w-5 h-5"
+						class="h-5 w-5"
 					>
 						<path
 							stroke-linecap="round"

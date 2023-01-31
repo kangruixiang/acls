@@ -1,14 +1,14 @@
 <div
-	class="fixed top-0 left-0 flex md:flex-col bg-[#008A94] text-white  md:w-64 whitespace-nowrap w-full overflow-x-auto items-end z-10 space-4 font-semibold px-4 py-4 md:relative md:h-screen"
+	class="fixed top-0 left-0 z-10 flex w-full items-end whitespace-nowrap bg-[#008A94] py-4 px-4 font-semibold text-white md:relative md:min-h-screen md:w-64 md:flex-col"
 >
-	<div onclick="history.back()" class="flex items-center cursor-pointer ">
+	<div onclick="history.back()" class="flex cursor-pointer items-center ">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			fill="none"
 			viewBox="0 0 24 24"
 			stroke-width="1.5"
 			stroke="currentColor"
-			class="w-5 h-5"
+			class="h-5 w-5"
 		>
 			<path
 				stroke-linecap="round"
