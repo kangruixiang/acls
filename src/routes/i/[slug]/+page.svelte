@@ -1,16 +1,19 @@
 <script lang="ts">
 	import SvelteMarkdown from 'svelte-markdown';
+
 	export let data: Object;
 	// const comment = data.inhaler.comment;
 	const comment = `# this is a test`;
 </script>
 
 <div class="mx-4 mt-20 flex flex-col space-y-4">
-	<h1 class="text-lg font-semibold">{data.inhaler['brand name']}</h1>
-
 	<div class="aspect-w-3 aspect-h-2 ">
 		<img src={data.inhaler['image']} alt="" class="bg-white object-contain rounded-md border" />
 	</div>
+
+	<h1 class="text-lg font-semibold">
+		{data.inhaler['brand name']}
+	</h1>
 
 	<table class="table-auto w-full">
 		<tr>

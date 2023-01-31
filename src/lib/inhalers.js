@@ -164,7 +164,7 @@ export const defaultInhalers = [
 	{
 		'brand name': 'Advair HFA',
 		generic: 'fluticasone-salmeterol',
-		composition: 'ICS',
+		composition: 'ICS-LABA',
 		type: 'Metered dose inhaler',
 		frequency: 'Twice daily',
 		image: '/Advair HFA.jpg',

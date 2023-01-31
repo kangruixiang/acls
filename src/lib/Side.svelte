@@ -32,14 +32,14 @@
 </script>
 
 <div
-	class="fixed top-0 left-0 flex flex-col w-full   z-10 md:relative md:w-64 md:h-screen md:bg-gray-200 border-b"
+	class="fixed top-0 left-0 flex flex-col w-full z-10 md:relative md:w-64 md:h-screen bg-[#008A94] border-b text-white"
 >
-	<div class="flex md:flex-col bg-gray-200 whitespace-nowrap items-end overflow-x-auto">
+	<div class="flex md:flex-col   whitespace-nowrap items-end overflow-x-auto ">
 		<span class="font-semibold px-2 py-4">Types of Inhalers</span>
 
 		{#each inhalerTypes as inhalerType}
 			<div
-				class="px-2 py-4 cursor-pointer"
+				class="px-2 py-4 cursor-pointer text-white hover:bg-[#0896a0]  active:bg-[#0d9ba5] bg-[#008A94] w-full md:text-right md:px-6 "
 				class:selected={current === inhalerType}
 				on:click={() => selectByComposition(inhalerType)}
 			>
@@ -52,6 +52,6 @@
 
 <style>
 	.selected {
-		background-color: #d0d0d0;
+		background-color: #0896a0;
 	}
 </style>

@@ -3,10 +3,8 @@
 	import Side from '$lib/Side.svelte';
 </script>
 
-<div class="flex min-h-screen flex-col justify-center items-center bg-[#CCCCCC]">
-	<div
-		class="bg-gray-100 shadow-lg w-full flex md:flex-row flex-col rounded-md md:py-12 min-h-screen relative "
-	>
+<div class="flex min-h-screen bg-white flex-col justify-center items-center w-screen">
+	<div class=" w-screen flex md:flex-row flex-col rounded-md  min-h-screen relative mb-20">
 		<slot />
 	</div>
 </div>
