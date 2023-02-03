@@ -333,5 +333,23 @@ export const defaultInhalers = [
 		frequency: 'As needed',
 		image: '/Combivent Respimat.jpg',
 		url: 'https://www.combivent.com/'
+	},
+	{
+		'brand name': 'Yupelri',
+		generic: 'revefenacin',
+		composition: 'LAMA',
+		type: 'Nebulizer',
+		frequency: 'Once daily',
+		image: '/Yupelri.png',
+		url: 'https://www.yupelri.com/'
+	},
+	{
+		'brand name': 'Duoneb',
+		generic: 'ipratropium-albuterol',
+		composition: 'SABA-SAMA',
+		type: 'Nebulizer',
+		frequency: 'As needed',
+		image: '/duoneb.jpg',
+		url: ''
 	}
 ];

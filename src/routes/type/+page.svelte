@@ -47,5 +47,22 @@
 				allowfullscreen
 			/>
 		</div>
+
+		<h2>Nebulizers</h2>
+
+		<p>
+			Nebulizer is a small machine that turns liquid into mist to be inhaled. These are great for
+			patients who have trouble with taking a deep breath.
+		</p>
+
+		<div class="aspect-w-4 aspect-h-3">
+			<iframe
+				src="https://www.youtube.com/embed/pEKFKZiLNaA"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				allowfullscreen
+			/>
+		</div>
 	</div>
 </div>
