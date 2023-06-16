@@ -1,3 +1,5 @@
+import { writable } from 'svelte/store';
+
 export const defaultInhalers = [
 	{
 		'brand name': 'ProAir Digihaler',
@@ -353,3 +355,5 @@ export const defaultInhalers = [
 		url: ''
 	}
 ];
+
+export const inhalers = writable(defaultInhalers);

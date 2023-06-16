@@ -1,26 +1,18 @@
 <script>
-	import { inhalers } from '$lib/store.js';
-	import { fly } from 'svelte/transition';
-	import Side from '$lib/Side.svelte';
+	import { inhalers } from '$lib/inhalers';
+	import { Thumbnail, ThumbnailItem, Search } from '$lib/components/index';
 </script>
 
-<div class="relative flex flex-col md:flex-row">
-	<Side />
-	<div
-		class="z-0 grid h-screen auto-rows-min grid-cols-2 gap-x-4 gap-y-6 overflow-y-auto bg-slate-100 px-10 pt-20 md:w-[100%] md:grid-cols-4 md:gap-y-12 md:py-8"
-	>
-		{#each $inhalers as inhaler}
-			<a
-				href="/i/{inhaler['brand name']}"
-				in:fly={{ y: 20, duration: 500, delay: 100 }}
-				out:fly={{ duration: 100 }}
-				class="flex flex-col rounded-md bg-slate-50 hover:shadow"
-			>
-				<div class="aspect-w-3 aspect-h-2">
-					<img src={inhaler['image']} alt="" class="rounded-t-md bg-white object-contain" />
-				</div>
-				<div class="px-2 py-4 text-center md:text-lg">{inhaler['brand name']}</div>
-			</a>
-		{/each}
+<div class="sticky top-12 z-10 border-b border-neutral-200 bg-neutral-100 py-2 md:top-0">
+	<div class="mx-auto px-4 md:max-w-5xl">
+		<Search />
 	</div>
+</div>
+
+<div class="mx-auto mt-5 max-w-5xl">
+	<Thumbnail inhalers={$inhalers} let:inhaler>
+		<ThumbnailItem url={inhaler['brand name']} image={inhaler.image}>
+			<svelte:fragment>{inhaler['brand name']}</svelte:fragment>
+		</ThumbnailItem>
+	</Thumbnail>
 </div>

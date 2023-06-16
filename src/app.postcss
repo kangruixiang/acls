@@ -9,6 +9,10 @@
      box-sizing: border-box; 
 }
 
+/* * {
+	border: 1px solid black
+} */
+
 body {
 	min-height: 100vh;
 	margin: 0;
@@ -34,7 +38,7 @@ body {
 }
 @layer components {
 	body {
-		@apply text-zinc-800 bg-stone-50;
+		@apply bg-neutral-100 text-gray-900 hover:text-black dark:bg-neutral-600 dark:text-gray-200 dark:hover:text-gray-100
 	}
 	img {
 		@apply block mx-auto;
@@ -45,9 +49,10 @@ body {
 	h2 {
 		@apply mb-2 text-lg font-bold uppercase;
 	}
-	p {
-		@apply font-serif text-zinc-800;
+	h3 {
+		@apply text-lg
 	}
+
 	ul,
 	ol {
 		@apply font-serif text-xl;
@@ -66,6 +71,9 @@ body {
 	}
 	.select {
 		@apply font-semibold border-2 border-solid rounded-md outline-none focus:outline-none focus:bg-white focus:border-zinc-800 border-zinc-800 bg-zinc-50 text-zinc-800 focus:ring-0;
+	}
+	.selected > div {
+		@apply dark:bg-neutral-600 bg-neutral-200;
 	}
 	.label {
 		@apply my-2 font-sans font-semibold;
