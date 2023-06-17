@@ -5,6 +5,6 @@
 
 <TopNav />
 
-<div class="prose mx-auto max-w-5xl p-4 dark:prose-invert md:p-20">
+<div class="prose-lg mx-auto max-w-5xl p-4 dark:prose-invert md:p-20">
 	<Content />
 </div>

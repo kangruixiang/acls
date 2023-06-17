@@ -16,7 +16,6 @@ specifiers:
   remark-gfm: ^3.0.1
   svelte: ^3.59.1
   svelte-check: ^3.4.3
-  svelte-markdown: ^0.2.3
   svelte-preprocess: ^4.10.7
   tailwindcss: ^3.3.2
   tslib: ^2.5.3
@@ -27,7 +26,6 @@ dependencies:
   '@tailwindcss/typography': 0.5.9_tailwindcss@3.3.2
   minisearch: 6.1.0
   remark-gfm: 3.0.1
-  svelte-markdown: 0.2.3_svelte@3.59.1
 
 devDependencies:
   '@sveltejs/adapter-auto': 1.0.3_@sveltejs+kit@1.20.2
@@ -403,10 +401,6 @@ packages:
     resolution: {integrity: sha512-/vPO1EPOs306Cvhwv7KfVfYvOJqA/S/AXjaHQiJboCZzcNDb+TIJFN9/2C9DZ//ijSKWioNyUxD792QmDJ+HKQ==}
     dependencies:
       '@types/ms': 0.7.31
-    dev: false
-
-  /@types/marked/4.3.1:
-    resolution: {integrity: sha512-vSSbKZFbNktrQ15v7o1EaH78EbWV+sPQbPjHG+Cp8CaNcPFUEfjZ0Iml/V0bFDwsTlYe8o6XC5Hfdp91cqPV2g==}
     dev: false
 
   /@types/mdast/3.0.11:
@@ -864,12 +858,6 @@ packages:
 
   /markdown-table/3.0.3:
     resolution: {integrity: sha512-Z1NL3Tb1M9wH4XESsCDEksWoKTdlUafKc4pt0GRwjUyXaCFZ+dc3g2erqB6zm3szA2IUSi7VnPI+o/9jnxh9hw==}
-    dev: false
-
-  /marked/4.3.0:
-    resolution: {integrity: sha512-PRsaiG84bK+AMvxziE/lCFss8juXjNaWzVbN5tXAm4XjeaS9NAHhop+PjQxz2A9h8Q4M/xGmzP8vqNwy6JeK0A==}
-    engines: {node: '>= 12'}
-    hasBin: true
     dev: false
 
   /mdast-util-find-and-replace/2.2.2:
@@ -1705,16 +1693,6 @@ packages:
       svelte: 3.59.1
     dev: true
 
-  /svelte-markdown/0.2.3_svelte@3.59.1:
-    resolution: {integrity: sha512-2h680NzTXnAD0CXhxe3GeHl6W+ayG4iKQRl+BIDRw+R0mUE0OiNxP1Vt8Rn+aWevB/LBiBIPCAwvL+0BkG057A==}
-    peerDependencies:
-      svelte: ^3.0.0
-    dependencies:
-      '@types/marked': 4.3.1
-      marked: 4.3.0
-      svelte: 3.59.1
-    dev: false
-
   /svelte-preprocess/4.10.7_vmz4xia4c7tzh4ii3qac2x3tom:
     resolution: {integrity: sha512-sNPBnqYD6FnmdBrUmBCaqS00RyCsCpj2BG58A1JBswNF7b0OKviwxqVrOL/CKyJrLSClrSeqQv5BXNg2RUbPOw==}
     engines: {node: '>= 9.11.2'}
@@ -1820,6 +1798,7 @@ packages:
   /svelte/3.59.1:
     resolution: {integrity: sha512-pKj8fEBmqf6mq3/NfrB9SLtcJcUvjYSWyePlfCqN9gujLB25RitWK8PvFzlwim6hD/We35KbPlRteuA6rnPGcQ==}
     engines: {node: '>= 8'}
+    dev: true
 
   /tailwindcss/3.3.2:
     resolution: {integrity: sha512-9jPkMiIBXvPc2KywkraqsUfbfj+dHDb+JPWtSJa9MLFdrPyazI7q6WX2sUrm7R9eVR7qqv3Pas7EvQFzxKnI6w==}
