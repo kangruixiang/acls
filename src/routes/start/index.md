@@ -1,7 +1,7 @@
 
 ## Which inhaler to start initially
 
-This ~page~ goes beyond objective information and provides some suggestions to initial inhaler choice based on evidence and guidelines.
+This page goes beyond objective information and provides some suggestions to initial inhaler choice based on evidence and guidelines.
 
 In general, it's important to distinguish if one is treating asthma or chronic obstructive pulmonary disease (COPD). Asthma is a reactive inflammatory disease. In the past, albuterol PRN was used as initial therapy for asthma. However, recent studies show that compared to inhaled corticosteroid (ICS), albuterol as monotherapy has been associated with more exacerbations in mild asthma patients, possibly as it only masks symptoms and does not treat the underlying inflamation.[^1][^2] Thus, the use of ICS in asthma is now recommended. On the other hand, ICS is only recommended in COPD when there is an inflammatory component (e.g. elevated blood eosinophil count).[^3] The use of ICS is associated with elevated pneumonia risk in COPD patients.[^4]
 
