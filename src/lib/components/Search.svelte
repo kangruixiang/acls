@@ -23,13 +23,6 @@
 	miniSearch.addAll(defaultInhalers);
 
 	function searchInhaler() {
-		const baseURL = import.meta.env.BASE_URL;
-		const rootURL = baseURL + '/';
-
-		if (window.location.href !== baseURL) {
-			console.log(window.location.href, baseURL, rootURL);
-		}
-
 		if (!searchTerm) {
 			inhalers.set(defaultInhalers);
 			return;

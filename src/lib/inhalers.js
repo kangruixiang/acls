@@ -5,7 +5,7 @@ export const defaultInhalers = [
 		'brand name': 'ProAir Digihaler',
 		generic: 'albuterol',
 		composition: 'SABA',
-		type: 'Dry powder inhaler',
+		type: 'Digihaler',
 		frequency: 'as needed',
 		image: '/ProAir Digihaler.png',
 		url: 'https://www.digihaler.com/'
@@ -23,7 +23,7 @@ export const defaultInhalers = [
 		'brand name': 'ProAir RespiClick',
 		generic: 'albuterol',
 		composition: 'SABA',
-		type: 'Dry powder inhaler',
+		type: 'Respiclick',
 		frequency: 'as needed',
 		image: '/ProAir RespiClick.png',
 		url: 'https://www.proair.com/respiclick/about'
@@ -68,7 +68,7 @@ export const defaultInhalers = [
 		'brand name': 'Striverdi Respimat',
 		generic: 'olodaterol',
 		composition: 'LABA',
-		type: 'Dry powder inhaler',
+		type: 'Respimat',
 		frequency: '2 puffs daily',
 		image: '/Striverdi Respimat.jpg',
 		url: 'https://www.boehringer-ingelheim.com/products/striverdi-respimat'
@@ -86,7 +86,7 @@ export const defaultInhalers = [
 		'brand name': 'ArmonAir Digihaler',
 		generic: 'fluticasone',
 		composition: 'ICS',
-		type: 'Dry powder inhaler',
+		type: 'Digihaler',
 		frequency: 'twice daily',
 		image: '/ArmonAir Digihaler.png',
 		url: 'https://www.digihaler.com/'
@@ -95,7 +95,7 @@ export const defaultInhalers = [
 		'brand name': 'Arnuity Ellipta',
 		generic: 'fluticasone',
 		composition: 'ICS',
-		type: 'Dry powder inhaler',
+		type: 'Ellipta',
 		frequency: 'twice daily',
 		image: '/Arnuity Ellipta.png',
 		url: 'https://arnuity.com/'
@@ -113,7 +113,7 @@ export const defaultInhalers = [
 		'brand name': 'Asmanex Twisthaler',
 		generic: 'mometasone',
 		composition: 'ICS',
-		type: 'Dry powder inhaler',
+		type: 'Twisthaler',
 		frequency: 'once daily',
 		image: '/Asmanex Twisthaler.png',
 		url: ''
@@ -140,7 +140,7 @@ export const defaultInhalers = [
 		'brand name': 'Pulmicort Flexhaler',
 		generic: 'budesonide',
 		composition: 'ICS',
-		type: 'Dry powder inhaler',
+		type: 'Flexhaler',
 		frequency: 'twice daily',
 		image: '/Pulmicort Flexhaler.jpg',
 		url: 'https://www.pulmicortflexhaler.com/home.html'
@@ -176,7 +176,7 @@ export const defaultInhalers = [
 		'brand name': 'Airduo Digihaler',
 		generic: 'fluticasone-salmeterol',
 		composition: 'ICS-LABA',
-		type: 'Dry powder inhaler',
+		type: 'Digihaler',
 		frequency: 'as needed',
 		image: '/Airduo Digihaler.png',
 		url: 'https://www.digihaler.com/'
@@ -185,7 +185,7 @@ export const defaultInhalers = [
 		'brand name': 'Airduo RespiClick',
 		generic: 'fluticasone-salmeterol',
 		composition: 'ICS-LABA',
-		type: 'Dry powder inhaler',
+		type: 'Respiclick',
 		frequency: 'twice daily',
 		image: '/Airduo RespiClick.jpg',
 		url: 'https://hcp.myairduo.com/'
@@ -194,7 +194,7 @@ export const defaultInhalers = [
 		'brand name': 'Breo Ellipta',
 		generic: 'fluticasone-vilanterol',
 		composition: 'ICS-LABA',
-		type: 'Dry powder inhaler',
+		type: 'Ellipta',
 		frequency: '1 puff once daily',
 		image: '/Breo Ellipta.jpg',
 		url: 'https://www.mybreo.com/'
@@ -232,7 +232,7 @@ export const defaultInhalers = [
 		'brand name': 'Anoro Ellipta',
 		generic: 'umeclidinium-vilanterol',
 		composition: 'LABA-LAMA',
-		type: 'Dry powder inhaler',
+		type: 'Ellipta',
 		frequency: '1 puff once daily',
 		image: '/Anoro Ellipta.png',
 		url: 'https://www.anoro.com/'
@@ -250,7 +250,7 @@ export const defaultInhalers = [
 		'brand name': 'Duaklir Pressair',
 		generic: 'aclidinium-formoterol',
 		composition: 'LABA-LAMA',
-		type: 'Metered dose inhaler',
+		type: 'Pressair',
 		frequency: 'twice daily',
 		image: '/Duaklir Pressair.jpg',
 		url: ''
@@ -259,7 +259,7 @@ export const defaultInhalers = [
 		'brand name': 'Stiolto Respimat',
 		generic: 'tiotropium-olodaterol',
 		composition: 'LABA-LAMA',
-		type: 'Metered dose inhaler',
+		type: 'Respimat',
 		frequency: '2 puffs daily',
 		image: '/Stiolto Respimat.jpg',
 		url: 'https://www.stiolto.com/'
@@ -268,7 +268,7 @@ export const defaultInhalers = [
 		'brand name': 'Trelegy Ellipta',
 		generic: 'fluticasone-umeclidinium-vilanterol',
 		composition: 'ICS-LABA-LAMA',
-		type: 'Dry powder inhaler',
+		type: 'Ellipta',
 		frequency: '1 puff daily',
 		image: '/Trelegy Ellipta.jpg',
 		url: 'https://www.trelegy.com/'
@@ -295,7 +295,7 @@ export const defaultInhalers = [
 		'brand name': 'Incruse Ellipta',
 		generic: 'umeclidinium',
 		composition: 'LAMA',
-		type: 'Dry powder inhaler',
+		type: 'Ellipta',
 		frequency: '1 puff daily',
 		image: '/Incruse Ellipta.png',
 		url: 'https://incruse.com/'
@@ -313,7 +313,7 @@ export const defaultInhalers = [
 		'brand name': 'Spiriva Respimat',
 		generic: 'tiotropium',
 		composition: 'LAMA',
-		type: 'Metered dose inhaler',
+		type: 'Respimat',
 		frequency: '2 puffs daily',
 		image: '/Spiriva Respimat.jpg',
 		url: 'https://www.spiriva.com/copd/still-on-spiriva-handihaler/meet-the-mist'
@@ -322,7 +322,7 @@ export const defaultInhalers = [
 		'brand name': 'Tudorza Pressair',
 		generic: 'aclidinium',
 		composition: 'LAMA',
-		type: 'Dry powder inhaler',
+		type: 'Pressair',
 		frequency: '1 puff twice daily',
 		image: '/Tudorza Pressair.png',
 		url: 'https://www.tudorza.us/'
@@ -331,7 +331,7 @@ export const defaultInhalers = [
 		'brand name': 'Combivent Respimat',
 		generic: 'ipratropium-albuterol',
 		composition: 'SABA-SAMA',
-		type: 'Metered dose inhaler',
+		type: 'Respimat',
 		frequency: 'as needed',
 		image: '/Combivent Respimat.jpg',
 		url: 'https://www.combivent.com/'

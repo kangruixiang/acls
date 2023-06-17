@@ -1,16 +1,14 @@
 <script lang="ts">
-	export let imageURL = '';
+	export let inhaler;
 </script>
 
-<div class="mx-8 my-4 flex space-x-8">
-	<div class="flex h-64 items-center">
-		<img
-			src={imageURL}
-			alt=""
-			class="aspect-square dark:bg-dark-main rounded-md border-2 bg-day-darker object-contain"
-		/>
-	</div>
-	<div class="w-1/2 bg-day-darker">
-		<slot />
-	</div>
+<div class="w-full md:w-1/2">
+	<img src={inhaler.image} alt="" class="  aspect-square mx-auto h-96 rounded object-contain" />
+</div>
+<div class="mx-auto w-full rounded bg-neutral-200 p-10 dark:bg-neutral-800 md:w-1/2">
+	<h1>{inhaler['brand name']}</h1>
+	<span class="text-lg">Generic: {inhaler.generic}</span> <br />
+	<span class="text-lg">Type of Inhaler: {inhaler.composition}</span> <br />
+	<span class="text-lg">Instruction: {inhaler.frequency}</span> <br />
+	<a class="break-words text-lg hover:underline" href={inhaler.url}>{inhaler.url}</a>
 </div>

@@ -93,8 +93,16 @@
 			class="mx-1 my-1 rounded-sm px-2 py-2 hover:bg-main-500 dark:hover:bg-neutral-500 dark:hover:text-gray-200"
 		>
 			Where to Start?
+		</div>
+	</a>
+	<a href="/equivalent"
+		><div
+			class="mx-1 my-1 rounded-sm px-2 py-2 hover:bg-main-500 dark:hover:bg-neutral-500 dark:hover:text-gray-200"
+		>
+			Steroid Equivalents
 		</div></a
 	>
+
 	<a href="https://projects.krxiang.com"
 		><div
 			class="mx-1 my-1 rounded-sm px-2 py-2 hover:bg-main-500 dark:hover:bg-neutral-500 dark:hover:text-gray-200"

@@ -1,0 +1,14 @@
+<script lang="ts">
+	export let url: string,
+		time = 0;
+</script>
+
+<div class="aspect-h-3 aspect-w-4">
+	<iframe
+		src="https://www.youtube.com/embed/{url}?start={time}"
+		title="YouTube video player"
+		frameborder="0"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+		allowfullscreen
+	/>
+</div>
