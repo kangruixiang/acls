@@ -48,7 +48,9 @@
 	</div>
 {/if}
 
-<!-- <h2>Nebulizers</h2>
+{#if InhalerType === 'Nebulizer'}
+
+<h2>Nebulizers</h2>
 
 <p>
 	Nebulizer is a small machine that turns liquid into mist to be inhaled. These are great for
@@ -63,4 +65,5 @@
 		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 		allowfullscreen
 	/>
-</div> -->
+</div>
+{/if}

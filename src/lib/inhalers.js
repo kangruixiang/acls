@@ -6,7 +6,7 @@ export const defaultInhalers = [
 		generic: 'albuterol',
 		composition: 'SABA',
 		type: 'Dry powder inhaler',
-		frequency: 'As needed',
+		frequency: 'as needed',
 		image: '/ProAir Digihaler.png',
 		url: 'https://www.digihaler.com/'
 	},
@@ -15,7 +15,7 @@ export const defaultInhalers = [
 		generic: 'albuterol',
 		composition: 'SABA',
 		type: 'Metered dose inhaler',
-		frequency: 'As needed',
+		frequency: 'as needed',
 		image: '/ProAir HFA.jpg',
 		url: 'https://www.proair.com/hfa'
 	},
@@ -24,7 +24,7 @@ export const defaultInhalers = [
 		generic: 'albuterol',
 		composition: 'SABA',
 		type: 'Dry powder inhaler',
-		frequency: 'As needed',
+		frequency: 'as needed',
 		image: '/ProAir RespiClick.png',
 		url: 'https://www.proair.com/respiclick/about'
 	},
@@ -33,7 +33,7 @@ export const defaultInhalers = [
 		generic: 'albuterol',
 		composition: 'SABA',
 		type: 'Metered dose inhaler',
-		frequency: 'As needed',
+		frequency: 'as needed',
 		image: '/Proventil HFA.jpg',
 		url: ''
 	},
@@ -42,7 +42,7 @@ export const defaultInhalers = [
 		generic: 'albuterol',
 		composition: 'SABA',
 		type: 'Metered dose inhaler',
-		frequency: 'As needed',
+		frequency: 'as needed',
 		image: '/Ventolin HFA.jpg',
 		url: 'https://www.ventolin.com/'
 	},
@@ -51,7 +51,7 @@ export const defaultInhalers = [
 		generic: 'levalbuterol',
 		composition: 'SABA',
 		type: 'Metered dose inhaler',
-		frequency: 'As needed',
+		frequency: 'as needed',
 		image: '/Xopenex HFA.jpg',
 		url: ''
 	},
@@ -78,7 +78,7 @@ export const defaultInhalers = [
 		generic: 'ciclesonide',
 		composition: 'ICS',
 		type: 'Metered dose inhaler',
-		frequency: 'Twice daily',
+		frequency: 'twice daily',
 		image: '/Alvesco HFA.png',
 		url: 'https://www.alvesco.us/'
 	},
@@ -87,7 +87,7 @@ export const defaultInhalers = [
 		generic: 'fluticasone',
 		composition: 'ICS',
 		type: 'Dry powder inhaler',
-		frequency: 'Twice daily',
+		frequency: 'twice daily',
 		image: '/ArmonAir Digihaler.png',
 		url: 'https://www.digihaler.com/'
 	},
@@ -96,7 +96,7 @@ export const defaultInhalers = [
 		generic: 'fluticasone',
 		composition: 'ICS',
 		type: 'Dry powder inhaler',
-		frequency: 'Twice daily',
+		frequency: 'twice daily',
 		image: '/Arnuity Ellipta.png',
 		url: 'https://arnuity.com/'
 	},
@@ -105,7 +105,7 @@ export const defaultInhalers = [
 		generic: 'mometasone',
 		composition: 'ICS',
 		type: 'Metered dose inhaler',
-		frequency: 'Twice daily',
+		frequency: 'twice daily',
 		image: '/Asmanex HFA.png',
 		url: 'https://www.asmanex.com/asmanex-hfa/'
 	},
@@ -114,7 +114,7 @@ export const defaultInhalers = [
 		generic: 'mometasone',
 		composition: 'ICS',
 		type: 'Dry powder inhaler',
-		frequency: 'Once daily',
+		frequency: 'once daily',
 		image: '/Asmanex Twisthaler.png',
 		url: ''
 	},
@@ -123,7 +123,7 @@ export const defaultInhalers = [
 		generic: 'fluticasone',
 		composition: 'ICS',
 		type: 'Dry powder inhaler',
-		frequency: 'Twice daily',
+		frequency: 'twice daily',
 		image: '/Flovent Diskus.jpg',
 		url: 'https://www.flovent.com/'
 	},
@@ -132,7 +132,7 @@ export const defaultInhalers = [
 		generic: 'fluticasone',
 		composition: 'ICS',
 		type: 'Metered dose inhaler',
-		frequency: 'Twice daily',
+		frequency: 'twice daily',
 		image: '/Flovent HFA.jpg',
 		url: 'https://www.flovent.com/'
 	},
@@ -141,7 +141,7 @@ export const defaultInhalers = [
 		generic: 'budesonide',
 		composition: 'ICS',
 		type: 'Dry powder inhaler',
-		frequency: 'Twice daily',
+		frequency: 'twice daily',
 		image: '/Pulmicort Flexhaler.jpg',
 		url: 'https://www.pulmicortflexhaler.com/home.html'
 	},
@@ -150,7 +150,7 @@ export const defaultInhalers = [
 		generic: 'beclomethasone',
 		composition: 'ICS',
 		type: 'Metered dose inhaler',
-		frequency: 'Twice daily',
+		frequency: 'twice daily',
 		image: '/QVAR Redihaler.jpg',
 		url: 'https://www.qvar.com/'
 	},
@@ -159,7 +159,7 @@ export const defaultInhalers = [
 		generic: 'fluticasone-salmeterol',
 		composition: 'ICS-LABA',
 		type: 'Dry powder inhaler',
-		frequency: 'Twice daily',
+		frequency: 'twice daily',
 		image: '/Advair Diskus.jpg',
 		url: 'https://www.advair.com/'
 	},
@@ -168,7 +168,7 @@ export const defaultInhalers = [
 		generic: 'fluticasone-salmeterol',
 		composition: 'ICS-LABA',
 		type: 'Metered dose inhaler',
-		frequency: 'Twice daily',
+		frequency: '2 puffs twice daily',
 		image: '/Advair HFA.jpg',
 		url: 'https://www.advair.com/'
 	},
@@ -177,7 +177,7 @@ export const defaultInhalers = [
 		generic: 'fluticasone-salmeterol',
 		composition: 'ICS-LABA',
 		type: 'Dry powder inhaler',
-		frequency: 'As needed',
+		frequency: 'as needed',
 		image: '/Airduo Digihaler.png',
 		url: 'https://www.digihaler.com/'
 	},
@@ -186,7 +186,7 @@ export const defaultInhalers = [
 		generic: 'fluticasone-salmeterol',
 		composition: 'ICS-LABA',
 		type: 'Dry powder inhaler',
-		frequency: 'Twice daily',
+		frequency: 'twice daily',
 		image: '/Airduo RespiClick.jpg',
 		url: 'https://hcp.myairduo.com/'
 	},
@@ -195,7 +195,7 @@ export const defaultInhalers = [
 		generic: 'fluticasone-vilanterol',
 		composition: 'ICS-LABA',
 		type: 'Dry powder inhaler',
-		frequency: 'Once daily',
+		frequency: '1 puff once daily',
 		image: '/Breo Ellipta.jpg',
 		url: 'https://www.mybreo.com/'
 	},
@@ -204,7 +204,7 @@ export const defaultInhalers = [
 		generic: 'mometasone-formoterol',
 		composition: 'ICS-LABA',
 		type: 'Metered dose inhaler',
-		frequency: 'Twice daily',
+		frequency: '2 puffs twice daily',
 		image: '/Dulera.jpg',
 		url: 'https://www.dulera.com/'
 	},
@@ -213,7 +213,7 @@ export const defaultInhalers = [
 		generic: 'budesonide-formoterol',
 		composition: 'ICS-LABA',
 		type: 'Metered dose inhaler',
-		frequency: 'Twice daily',
+		frequency: '2 puffs twice daily',
 		image: '/Symbicort.jpg',
 		url: 'https://www.mysymbicort.com/',
 		comment: `<p>With formoterol's fast onset of action, Symbicort can be used both PRN and as maintenaince medication.</p>`
@@ -223,7 +223,7 @@ export const defaultInhalers = [
 		generic: 'fluticasone-propionate',
 		composition: 'ICS-LABA',
 		type: 'Dry powder inhaler',
-		frequency: 'Twice daily',
+		frequency: '1 puff twice daily',
 		image: '/Wixela.png',
 		url: 'https://www.wixela.com/',
 		comment: '<p>Wixela is the ICS-LABA choice at VA.</p>'
@@ -233,7 +233,7 @@ export const defaultInhalers = [
 		generic: 'umeclidinium-vilanterol',
 		composition: 'LABA-LAMA',
 		type: 'Dry powder inhaler',
-		frequency: 'Once daily',
+		frequency: '1 puff once daily',
 		image: '/Anoro Ellipta.png',
 		url: 'https://www.anoro.com/'
 	},
@@ -242,7 +242,7 @@ export const defaultInhalers = [
 		generic: 'glycopyrrolate-formoterol',
 		composition: 'LABA-LAMA',
 		type: 'Metered dose inhaler',
-		frequency: 'Twice daily',
+		frequency: '2 puffs twice daily',
 		image: '/Bevespi Aerosphere.png',
 		url: 'https://www.bevespi.com/'
 	},
@@ -251,7 +251,7 @@ export const defaultInhalers = [
 		generic: 'aclidinium-formoterol',
 		composition: 'LABA-LAMA',
 		type: 'Metered dose inhaler',
-		frequency: 'Twice daily',
+		frequency: 'twice daily',
 		image: '/Duaklir Pressair.jpg',
 		url: ''
 	},
@@ -287,7 +287,7 @@ export const defaultInhalers = [
 		generic: 'ipratropium',
 		composition: 'SAMA',
 		type: 'Metered dose inhaler',
-		frequency: 'As needed',
+		frequency: 'as needed',
 		image: '/Atrovent HFA.png',
 		url: ''
 	},
@@ -332,7 +332,7 @@ export const defaultInhalers = [
 		generic: 'ipratropium-albuterol',
 		composition: 'SABA-SAMA',
 		type: 'Metered dose inhaler',
-		frequency: 'As needed',
+		frequency: 'as needed',
 		image: '/Combivent Respimat.jpg',
 		url: 'https://www.combivent.com/'
 	},
@@ -341,7 +341,7 @@ export const defaultInhalers = [
 		generic: 'revefenacin',
 		composition: 'LAMA',
 		type: 'Nebulizer',
-		frequency: 'Once daily',
+		frequency: 'once daily',
 		image: '/Yupelri.png',
 		url: 'https://www.yupelri.com/'
 	},
@@ -350,7 +350,7 @@ export const defaultInhalers = [
 		generic: 'ipratropium-albuterol',
 		composition: 'SABA-SAMA',
 		type: 'Nebulizer',
-		frequency: 'As needed',
+		frequency: 'as needed',
 		image: '/duoneb.jpg',
 		url: ''
 	}

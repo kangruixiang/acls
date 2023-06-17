@@ -1,4 +1,6 @@
-<div class="sticky top-0 z-10 border-b border-neutral-200 bg-neutral-100">
+<div
+	class="sticky top-0 z-10 border-b border-neutral-200 bg-neutral-100 dark:border-neutral-600 dark:bg-neutral-800"
+>
 	<div class="ml-4 cursor-pointer py-4" on:keydown on:click={() => history.back()}>
 		<svg
 			xmlns="http://www.w3.org/2000/svg"

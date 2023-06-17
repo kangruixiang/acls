@@ -42,7 +42,7 @@
 </script>
 
 <input
-	class="w-full rounded bg-neutral-200 px-4 py-2 dark:bg-neutral-800"
+	class="w-full rounded bg-neutral-200 px-4 py-2 dark:bg-neutral-600"
 	type="text"
 	placeholder="Search..."
 	bind:value={searchTerm}
