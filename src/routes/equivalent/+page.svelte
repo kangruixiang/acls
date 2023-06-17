@@ -1,4 +1,5 @@
 <script>
+	import { TopNav } from '$lib/components/index';
 	const dosings = [
 		{
 			name: 'Low',
@@ -25,6 +26,8 @@
 	// 	brand: '160/4.5'
 	// }
 </script>
+
+<TopNav />
 
 <div class="mx-auto max-w-4xl p-8 dark:prose-invert md:p-20">
 	<table class="table-auto">

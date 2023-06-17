@@ -1,8 +1,7 @@
 import { defineMDSveXConfig as defineConfig } from 'mdsvex';
-import remarkGfm from 'remark-gfm';
 
-const config = defineConfig({
-	extensions: ['.svelte.md', '.md', '.svx', '.sevelte'],
+const defaultConfig = defineConfig({
+	extensions: ['.svelte.md', '.md', '.svx'],
 
 	smartypants: {
 		dashes: 'oldschool'
@@ -12,4 +11,4 @@ const config = defineConfig({
 	rehypePlugins: []
 });
 
-export default config;
+export default defaultConfig;

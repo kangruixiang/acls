@@ -8,8 +8,8 @@
 	<h2>Instructions for Metered Dose Inhaler</h2>
 	<p>
 		MDIs are pressurized containers with medicine in aerosol form. The patient must press the
-		canister to activate the propellant (usually HFA) and inhale slowly for several seconds at the
-		same time.
+		canister to activate the propellant (usually Hydrofluoroalkane, or HFA) and inhale slowly for
+		several seconds at the same time.
 	</p>
 
 	<h3>Without a Spacer</h3>
@@ -20,11 +20,7 @@
 
 	<p>Using spacer can help the inhalation process and make it easier to inhale the full dose:</p>
 
-	<YoutubeVideo url={'A8WT5moNJ0I'} />
-
-	<p>In Spanish:</p>
-
-	<YoutubeVideo url={'HjsOjvRNsx8'} />
+	<YoutubeVideo url={'sQUUJHzO-XQ'} spanish={'M2e1KrJzKFo'} />
 {/if}
 
 {#if InhalerType === 'Dry powder inhaler'}
@@ -41,11 +37,7 @@
 
 	<p>An example of DPI is Diskus inhalers:</p>
 
-	<YoutubeVideo url={'FnUgQTfP7P4'} />
-
-	<p>In Spanish:</p>
-
-	<YoutubeVideo url={'QRanQLeqdCI'} />
+	<YoutubeVideo url={'FnUgQTfP7P4'} spanish={'hYNg3oaVing'} />
 {/if}
 
 {#if InhalerType === 'Twisthaler'}
@@ -54,7 +46,7 @@
 		Twisthaler is an example of dry powder inhaler that uses twisting motions to prime the inhaler.
 	</p>
 
-	<YoutubeVideo url={'Vsiz8GnSmiM'} />
+	<YoutubeVideo url={'Vsiz8GnSmiM'} spanish={'GWeXd_NNAxA'} />
 {/if}
 
 {#if InhalerType === 'Flexhaler'}
@@ -62,7 +54,7 @@
 	<p>
 		Flexhaler is an example of dry powder inhaler that uses twisting motions to prime the inhaler.
 	</p>
-	<YoutubeVideo url={'Uz069SXWKzE'} />
+	<YoutubeVideo url={'Uz069SXWKzE'} spanish={'8KQ1EmSrIL8'} />
 {/if}
 
 {#if InhalerType === 'Nebulizer'}
@@ -73,16 +65,12 @@
 		patients who have trouble with taking a deep breath.
 	</p>
 
-	<YoutubeVideo url={'pEKFKZiLNaA'} />
-
-	<p>In Spanish:</p>
-
-	<YoutubeVideo url={'UJ6tWM1Exbk'} />
+	<YoutubeVideo url={'pEKFKZiLNaA'} spanish={'UJ6tWM1Exbk'} />
 {/if}
 
 {#if InhalerType === 'Respimat'}
 	<h2>Instructions for Respimat</h2>
-	<YoutubeVideo url={'tuVSp52KFfU'} />
+	<YoutubeVideo url={'tuVSp52KFfU'} spanish={'UEf-yIt9LtY'} />
 {/if}
 
 {#if InhalerType === 'Respiclick'}
@@ -93,24 +81,34 @@
 	</p>
 	<img src="/respiclick.png" alt="" />
 	<h2>Instructions for Respiclick</h2>
-	<YoutubeVideo url={'eM9FxTW1wzk'} />
+	<YoutubeVideo url={'eM9FxTW1wzk'} spanish={'Cu4oN57cCpE'} />
 {/if}
 
 {#if InhalerType === 'Pressair'}
 	<h2>Instructions for Pressair</h2>
-	<YoutubeVideo url={'e11nFHRs60w'} />
+	<YoutubeVideo url={'e11nFHRs60w'} spanish={'sSBCQw1WvWU'} />
 {/if}
 
 {#if InhalerType === 'Ellipta'}
 	<h2>Instructions for Ellipta</h2>
-	<YoutubeVideo url={'nk3zIQRBGMY'} />
+	<YoutubeVideo url={'nk3zIQRBGMY'} spanish={'vN4-xYeo_KQ'} />
 {/if}
 
 {#if InhalerType === 'Digihaler'}
-<p>
+	<p>
 		DigiHaler inhalers have built in sensors that records inhaler delivery and syncs it to phone
 		apps.
 	</p>
 	<h2>Instructions for Digihaler</h2>
-	<YoutubeVideo url={'nk3zIQRBGMY'} />
+
+	<p>
+		Diginhaler is an example of dry powder inhaler. The instructions are available at <a
+			href="https://www.digihaler.com/support/using-my-inhaler">manufacture website</a
+		>.
+	</p>
+{/if}
+
+{#if InhalerType === 'Redihaler'}
+	<h2>Instructions for Redihaler</h2>
+	<YoutubeVideo url={'LnyY3hu4lxg'} spanish={'hN90zSFtUGQ'} />
 {/if}

@@ -11,7 +11,7 @@
 	</div>
 </div>
 
-<div class="mx-auto mt-5 max-w-5xl">
+<div class="mx-auto my-5 max-w-5xl">
 	<Thumbnail inhalers={$inhalers} let:inhaler>
 		<ThumbnailItem url={inhaler['brand name']} image={inhaler.image}>
 			<svelte:fragment>{inhaler['brand name']}</svelte:fragment>

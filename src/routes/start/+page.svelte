@@ -1,6 +1,6 @@
 <script>
 	import { TopNav } from '$lib/components/index';
-	import Content from './test.md';
+	import Content from './index.md';
 </script>
 
 <TopNav />

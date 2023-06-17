@@ -146,10 +146,18 @@ export const defaultInhalers = [
 		url: 'https://www.pulmicortflexhaler.com/home.html'
 	},
 	{
+		'brand name': 'Pulmicort Nebulizer',
+		generic: 'budesonide',
+		composition: 'ICS',
+		type: 'Nebulizer',
+		frequency: 'twice daily',
+		image: '/PulmicortNeb.png'
+	},
+	{
 		'brand name': 'QVAR Redihaler',
 		generic: 'beclomethasone',
 		composition: 'ICS',
-		type: 'Metered dose inhaler',
+		type: 'Redihaler',
 		frequency: 'twice daily',
 		image: '/QVAR Redihaler.jpg',
 		url: 'https://www.qvar.com/'
@@ -225,8 +233,7 @@ export const defaultInhalers = [
 		type: 'Dry powder inhaler',
 		frequency: '1 puff twice daily',
 		image: '/Wixela.png',
-		url: 'https://www.wixela.com/',
-		comment: '<p>Wixela is the ICS-LABA choice at VA.</p>'
+		url: 'https://www.wixela.com/'
 	},
 	{
 		'brand name': 'Anoro Ellipta',
