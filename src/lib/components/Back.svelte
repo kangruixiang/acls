@@ -1,7 +1,11 @@
+<script>
+	import { goto } from '$app/navigation';
+</script>
+
 <div
-	class="fixed top-0 left-0 z-10 flex w-full items-end whitespace-nowrap bg-[#008A94] py-4 px-4 font-semibold text-white md:relative md:min-h-screen md:w-64 md:flex-col"
+	class="fixed left-0 top-0 z-10 flex w-full items-end whitespace-nowrap bg-[#008A94] px-4 py-4 font-semibold text-white md:relative md:min-h-screen md:w-64 md:flex-col"
 >
-	<div onclick="history.back()" class="flex cursor-pointer items-center ">
+	<div on:click={() => goto('/')} on:keydown class="flex cursor-pointer items-center">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			fill="none"

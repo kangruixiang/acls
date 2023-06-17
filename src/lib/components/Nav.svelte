@@ -95,11 +95,11 @@
 			Where to Start?
 		</div>
 	</a>
-	<a href="/equivalent"
+	<a href="/dosing"
 		><div
 			class="mx-1 my-1 rounded-sm px-2 py-2 hover:bg-main-500 dark:hover:bg-neutral-500 dark:hover:text-gray-200"
 		>
-			Steroid Equivalents
+			Steroid Dosing Chart
 		</div></a
 	>
 

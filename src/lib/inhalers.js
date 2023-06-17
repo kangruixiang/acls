@@ -230,7 +230,7 @@ export const defaultInhalers = [
 		'brand name': 'Wixela',
 		generic: 'fluticasone-propionate',
 		composition: 'ICS-LABA',
-		type: 'Dry powder inhaler',
+		type: 'Inhub',
 		frequency: '1 puff twice daily',
 		image: '/Wixela.png',
 		url: 'https://www.wixela.com/'
