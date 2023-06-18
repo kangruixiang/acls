@@ -265,7 +265,7 @@
 
 <TopNav />
 
-<div class=" mx-auto max-w-5xl p-8 md:p-20">
+<div class=" mx-auto max-w-5xl overflow-x-auto p-8 md:p-20">
 	<div class="prose-lg mb-4 max-w-none dark:prose-invert">
 		This page shows dosing of inhaled corticosteroids (ICS). This table does not imply potency
 		equivalence but only suggested total daily dosing level for low, medium, and high ICS.
