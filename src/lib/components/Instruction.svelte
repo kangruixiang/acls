@@ -123,7 +123,19 @@
 {/if}
 
 {#if InhalerType === 'Redihaler'}
+	<p>
+		QVAR uses a special metered dose inhaler that does not require any clicking or pressing.
+		Medication is delivered when the patient breaths in.
+	</p>
+
 	<h2>Instructions for Redihaler</h2>
+
+	<p>
+		Written instruction can be found on the <a
+			href="https://www.qvar.com/redihaler/how-to-use-qvar-redihaler">QVAR website</a
+		>.
+	</p>
+
 	<YoutubeVideo url={'LnyY3hu4lxg'} spanish={'hN90zSFtUGQ'} />
 {/if}
 

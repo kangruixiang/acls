@@ -96,7 +96,7 @@ export const defaultInhalers = [
 		generic: 'fluticasone',
 		composition: 'ICS',
 		type: 'Ellipta',
-		frequency: 'twice daily',
+		frequency: '1 puff in the evening',
 		image: '/Arnuity Ellipta.png',
 		url: 'https://arnuity.com/'
 	},
@@ -105,7 +105,7 @@ export const defaultInhalers = [
 		generic: 'mometasone',
 		composition: 'ICS',
 		type: 'Metered dose inhaler',
-		frequency: 'twice daily',
+		frequency: '2 puffs twice daily',
 		image: '/Asmanex HFA.png',
 		url: 'https://www.asmanex.com/asmanex-hfa/'
 	},
