@@ -1,13 +1,15 @@
 <script>
 	import { YoutubeVideo } from '$lib/components/index';
+	import { inhalers } from '$lib/inhalers';
 
 	export let InhalerType = 'mdi';
 </script>
 
 {#if InhalerType === 'Metered dose inhaler'}
 	<p>
-		MDIs are pressurized containers with medicine in aerosol form. The patient must press the
-		canister to activate the propellant (usually Hydrofluoroalkane, or HFA) and inhale slowly for
+		<strong>Metered dose inhalers (MDIs)</strong>
+		are pressurized containers with medicine in aerosol form. The patient must press the canister to
+		activate the propellant (usually Hydrofluoroalkane, or HFA) and <strong>inhale slowly</strong> for
 		several seconds at the same time.
 	</p>
 
@@ -34,8 +36,9 @@
 
 {#if InhalerType === 'Dry powder inhaler'}
 	<p>
-		DPIs deliver medication without a propellant. The patient must take in deep, fast breath with
-		DPI inhalers.
+		<strong>Dry powder inhalers (DPIs)</strong>
+		deliver medication without a propellant. The patient must take in
+		<strong>fast, forceful breath</strong> with DPI inhalers.
 	</p>
 
 	<p>
@@ -54,44 +57,49 @@
 	<YoutubeVideo url={'FnUgQTfP7P4'} spanish={'hYNg3oaVing'} />
 {/if}
 
-{#if InhalerType === 'Twisthaler'}
-	<h2>Instructions for Twisthaler</h2>
-	<p>
-		Twisthaler is an example of dry powder inhaler that uses twisting motions to prime the inhaler.
+{#if InhalerType === 'Twisthaler'}<p>
+		<strong>Twisthaler</strong>
+		is an example of dry powder inhaler that uses twisting motions to prime the inhaler.
 	</p>
+	<h2>Instructions for Twisthaler</h2>
 
 	<YoutubeVideo url={'Vsiz8GnSmiM'} spanish={'GWeXd_NNAxA'} />
 {/if}
 
-{#if InhalerType === 'Flexhaler'}
-	<h2>Instructions for Flexhaler</h2>
-	<p>
-		Flexhaler is an example of dry powder inhaler that uses twisting motions to prime the inhaler.
+{#if InhalerType === 'Flexhaler'}<p>
+		<strong>Flexhaler</strong>
+		is an example of dry powder inhaler that uses twisting motions to prime the inhaler.
 	</p>
+	<h2>Instructions for Flexhaler</h2>
+
 	<YoutubeVideo url={'Uz069SXWKzE'} spanish={'8KQ1EmSrIL8'} />
 {/if}
 
-{#if InhalerType === 'Nebulizer'}
-	<h2>Instructions for Nebulizers</h2>
-
-	<p>
-		Nebulizer is a small machine that turns liquid into mist to be inhaled. These are great for
-		patients who have trouble with taking a deep breath.
+{#if InhalerType === 'Nebulizer'}<p>
+		<strong>Nebulizer</strong>
+		is a small machine that turns liquid into mist to be inhaled. These are great for patients who have
+		trouble with taking a deep breath.
 	</p>
+	<h2>Instructions for Nebulizers</h2>
 
 	<YoutubeVideo url={'pEKFKZiLNaA'} spanish={'UJ6tWM1Exbk'} />
 {/if}
 
 {#if InhalerType === 'Respimat'}
+	<p>
+		<strong>Respimat</strong> is an example of metered dose inhaelr that uses soft mist as delivery and
+		does not use any propellant. Spacer can be used but is usually not necessary.
+	</p>
 	<h2>Instructions for Respimat</h2>
+
 	<YoutubeVideo url={'tuVSp52KFfU'} spanish={'UEf-yIt9LtY'} />
 {/if}
 
 {#if InhalerType === 'Respiclick'}
 	<p>
-		RespiClick inhalers are easier to use for patients with troubled hand-breath coordinations (e.g.
-		patients with Parkinson's disease). The powder is delivered with opening the cap and without the
-		need to press.
+		<strong>RespiClick</strong>
+		inhalers are easier to use for patients with troubled hand-breath coordinations (e.g. patients with
+		Parkinson's disease). The powder is delivered with opening the cap and without the need to press.
 	</p>
 	<img src="/respiclick.png" alt="" />
 	<h2>Instructions for Respiclick</h2>
@@ -104,14 +112,17 @@
 {/if}
 
 {#if InhalerType === 'Ellipta'}
+	<p>
+		<strong>Ellipta</strong> is an example of dry powder inhaler.
+	</p>
 	<h2>Instructions for Ellipta</h2>
 	<YoutubeVideo url={'nk3zIQRBGMY'} spanish={'vN4-xYeo_KQ'} />
 {/if}
 
 {#if InhalerType === 'Digihaler'}
 	<p>
-		DigiHaler inhalers have built in sensors that records inhaler delivery and syncs it to phone
-		apps.
+		<strong>DigiHaler</strong>
+		inhalers have built in sensors that records inhaler delivery and syncs it to phone apps.
 	</p>
 	<h2>Instructions for Digihaler</h2>
 
@@ -124,8 +135,9 @@
 
 {#if InhalerType === 'Redihaler'}
 	<p>
-		QVAR uses a special metered dose inhaler that does not require any clicking or pressing.
-		Medication is delivered when the patient breaths in.
+		<strong>QVAR</strong>
+		uses a special metered dose inhaler that does not require any clicking or pressing. Medication is
+		delivered when the patient breaths in.
 	</p>
 
 	<h2>Instructions for Redihaler</h2>
@@ -140,6 +152,9 @@
 {/if}
 
 {#if InhalerType === 'Inhub'}
+	<p>
+		<strong>Wixela</strong> is an example of dry powder inhaler.
+	</p>
 	<h2>Instructions for Inhub</h2>
 	<YoutubeVideo url={'hGT8zGRNTpo'} spanish={'fLsx59jd_H4'} />
 {/if}
