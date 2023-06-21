@@ -83,7 +83,7 @@
 
 <TopNav />
 
-<div class="prose-lg mx-auto max-w-5xl p-8 dark:prose-invert md:p-20">
+<div class="prose-lg mx-auto max-w-5xl overflow-x-auto p-8 dark:prose-invert md:p-20">
 	<h2>Types of Inhalers</h2>
 	<p>
 		In general, the two big categories of inhalers are metered dose inhalers (MDI) and dry powder
