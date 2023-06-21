@@ -41,6 +41,25 @@
 		}
 	];
 
+	const navLinks = [
+		{
+			name: 'Where to Start?',
+			url: '/start'
+		},
+		{
+			name: 'Types of Inhalers',
+			url: '/types'
+		},
+		{
+			name: 'Steroid Dosing Chart',
+			url: '/dosing'
+		},
+		{
+			name: 'Other projects by me',
+			url: 'https://projects.krxiang.com'
+		}
+	];
+
 	function changeInhalers(itemType: string) {
 		goto('/');
 		currentLocation = itemType;
@@ -88,28 +107,16 @@
 	{/each}
 
 	<div id="divider" class="mx-auto my-2 w-[95%] border-b dark:border-neutral-500" />
-	<a href="/start">
-		<div
-			class="mx-1 my-1 rounded-sm px-2 py-2 hover:bg-main-500 dark:hover:bg-neutral-500 dark:hover:text-gray-200"
-		>
-			Where to Start?
-		</div>
-	</a>
-	<a href="/dosing"
-		><div
-			class="mx-1 my-1 rounded-sm px-2 py-2 hover:bg-main-500 dark:hover:bg-neutral-500 dark:hover:text-gray-200"
-		>
-			Steroid Dosing Chart
-		</div></a
-	>
 
-	<a href="https://projects.krxiang.com"
-		><div
-			class="mx-1 my-1 rounded-sm px-2 py-2 hover:bg-main-500 dark:hover:bg-neutral-500 dark:hover:text-gray-200"
-		>
-			Other projects by me
-		</div></a
-	>
+	{#each navLinks as link}
+		<a href={link.url}>
+			<div
+				class="mx-1 my-1 rounded-sm px-2 py-2 hover:bg-main-500 dark:hover:bg-neutral-500 dark:hover:text-gray-200"
+			>
+				{link.name}
+			</div>
+		</a>
+	{/each}
 </div>
 
 <style>

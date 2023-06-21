@@ -306,6 +306,11 @@
 					</tr>
 				{/each}
 			{/each}
+			<tr>
+				<td colspan="5" class="border-y-2 border-black px-2 py-2"
+					>DPI, dry powder inhaler; MDI, metered dosing inhaler; HFA, hydrofluoroalkane.</td
+				>
+			</tr>
 		</tbody>
 	</table>
 </div>
