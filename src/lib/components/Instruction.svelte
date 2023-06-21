@@ -87,8 +87,10 @@
 
 {#if InhalerType === 'Respimat'}
 	<p>
-		<strong>Respimat</strong> is an example of metered dose inhaelr that uses soft mist as delivery and
-		does not use any propellant. Spacer can be used but is usually not necessary.
+		<strong>Respimat</strong> is an example of metered dose inhaler that uses slower, longer soft mist
+		as delivery and does not use any propellant. It eliminates need for hand-breath coordination. Spacer
+		can be used but is usually not necessary. The canister needs to be turned prior to use and can be
+		difficult for some patients.
 	</p>
 	<h2>Instructions for Respimat</h2>
 
