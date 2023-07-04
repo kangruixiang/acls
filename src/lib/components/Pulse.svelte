@@ -10,7 +10,7 @@
 		pulseCheckTime = 2 * 60;
 		pulseIntervalID = setInterval(() => {
 			pulseCheckTime--;
-		}, 1000);
+		}, 500);
 	}
 </script>
 

@@ -70,9 +70,9 @@
 				/>
 			</div>
 		</div>
+
+		<div class="my-2 border-t border-black" />
+
+		<HTCard />
 	{/if}
-
-	<div class="my-2 border-t border-black" />
-
-	<HTCard />
 </div>
