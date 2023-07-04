@@ -53,7 +53,7 @@
 		</MedRow>
 
 		<div>
-			<div class="px-4 pb-2">Shockable Rhythm</div>
+			<div class="pb-2">Shockable Rhythm</div>
 			<div class="flex w-full justify-end gap-2 px-4">
 				<Button
 					title={'Amiodarone'}

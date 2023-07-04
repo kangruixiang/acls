@@ -8,7 +8,7 @@
 </script>
 
 <div>
-	<div class="px-4 pb-2">
+	<div class="pb-2">
 		<slot name="title" />
 	</div>
 	<div class="flex w-full justify-between px-4">
