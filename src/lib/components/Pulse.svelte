@@ -1,16 +1,22 @@
 <script>
 	import { Button, rhythms } from '$lib/components/index';
-	let pulseIntervalID;
-	export let pulseCheckTime = 2 * 60;
+
+	export let pulseCheckTime;
+	let pulseIntervalID = null;
+
+	pulseIntervalID = setInterval(() => {
+		pulseCheckTime--;
+	}, 1000);
 
 	function pulseCheckCountDown() {
 		if (pulseIntervalID) {
 			clearInterval(pulseIntervalID);
 		}
-		pulseCheckTime = 2 * 60;
+		pulseCheckTime = 120;
+
 		pulseIntervalID = setInterval(() => {
 			pulseCheckTime--;
-		}, 500);
+		}, 1000);
 	}
 </script>
 

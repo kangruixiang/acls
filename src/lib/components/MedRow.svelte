@@ -3,7 +3,8 @@
 	export let title = '';
 
 	$: minutes = Math.floor(medTime / 60);
-	$: seconds = Math.floor((medTime / 60 - minutes) * 60);
+	$: seconds = Math.round((medTime / 60 - minutes) * 60);
+	$: minutes > 0 ? (minutes = minutes) : (minutes = 0);
 </script>
 
 <div>
@@ -11,7 +12,10 @@
 		<slot name="title" />
 	</div>
 	<div class="flex w-full justify-between px-4">
-		<span class="bg-green-200 px-4 py-4 text-xl text-neutral-800">{minutes} m {seconds} s</span>
+		<div class="{minutes == 0 ? 'bg-red-200' : 'bg-green-200'} px-4 py-4 text-xl text-neutral-800">
+			{#if minutes}{minutes} m{/if}
+			{seconds} s
+		</div>
 		<slot />
 	</div>
 </div>

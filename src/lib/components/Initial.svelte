@@ -5,8 +5,7 @@
 	export let intervalTime = 0;
 
 	function getCodeStartTime(interval: number) {
-		let currentTime = Date.now();
-		codeStartTime = currentTime - interval * 60 * 1000;
+		codeStartTime = Date.now() - interval * 60 * 1000;
 		startTimer();
 		return codeStartTime;
 	}

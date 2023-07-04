@@ -73,7 +73,7 @@
 	<ul>
 		<li>Total code time: {minutes} min {seconds} sec</li>
 		<li>
-			Airway obtained: {$airway}
+			Airway obtained: {$airway ? 'yes' : 'no'}
 		</li>
 		{#each items as item}
 			{#if item.value != 0}

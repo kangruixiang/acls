@@ -11,7 +11,7 @@
 		shock
 	} from '$lib/components/index';
 	let epiTime = 3 * 60;
-	let pulseCheckTime = 2 * 60;
+	let pulseCheckTime = 120;
 	let codeStartTime: number;
 	let intervalTime = 0;
 	let epiIntervalID = null;
@@ -28,15 +28,14 @@
 </script>
 
 <div class="mt-6 flex flex-col gap-4">
-	<Summary {intervalTime} {codeStartTime} />
-
-	<div class="my-2 border-t border-black" />
-
 	{#if !codeStartTime}
 		<Initial bind:codeStartTime bind:intervalTime />
 	{/if}
 
 	{#if codeStartTime}
+		<Summary {intervalTime} {codeStartTime} />
+
+		<div class="my-2 border-t border-black" />
 		<MedRow medTime={pulseCheckTime}>
 			<svelte:fragment slot="title">Next Pulse Check</svelte:fragment><Pulse bind:pulseCheckTime />
 		</MedRow>
