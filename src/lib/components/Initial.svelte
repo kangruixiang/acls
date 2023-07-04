@@ -28,5 +28,7 @@
 		<Button title={'5 min ago'} on:click={() => getCodeStartTime(5)} />
 		<Button title={'10 min ago'} on:click={() => getCodeStartTime(10)} />
 		<Button title={'15 min ago'} on:click={() => getCodeStartTime(15)} />
+		<Button title={'20 min ago'} on:click={() => getCodeStartTime(20)} />
+		<Button title={'30 min ago'} on:click={() => getCodeStartTime(30)} />
 	</div>
 </div>

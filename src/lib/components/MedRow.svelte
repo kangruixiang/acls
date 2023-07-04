@@ -12,7 +12,7 @@
 		<slot name="title" />
 	</div>
 	<div class="flex w-full justify-between px-4">
-		<div class="{minutes == 0 ? 'bg-red-200' : 'bg-green-200'} px-4 py-4 text-xl text-neutral-800">
+		<div class="{medTime > 0 ? 'bg-green-200' : 'bg-red-200'} px-4 py-4 text-xl text-neutral-800">
 			{#if minutes}{minutes} m{/if}
 			{seconds} s
 		</div>

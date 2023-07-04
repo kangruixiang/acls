@@ -18,7 +18,7 @@
 			cause: 'Hypoxia',
 			treatment: 'Advanced Airway',
 			add: () => {
-				$airway = true;
+				$airway = Date.now();
 			}
 		},
 		{

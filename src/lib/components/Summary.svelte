@@ -14,10 +14,12 @@
 		dextrose,
 		pericard,
 		rhythms,
-		getIntervalTime
+		getIntervalTime,
+		Button
 	} from '$lib/components/index';
 	export let intervalTime = 0;
 	export let codeStartTime = Date.now();
+	let summary;
 
 	$: minutes = Math.floor(intervalTime / 1000 / 60);
 	$: seconds = Math.floor((intervalTime / 1000 / 60 - minutes) * 60);
@@ -72,13 +74,19 @@
 			value: $bicarb.length
 		}
 	];
+
+	async function copy() {
+		await navigator.clipboard.writeText(
+			summary.innerText.replace(/\n\n\n/g, '\n\n').replace(/\n/g, '\r\n')
+		);
+	}
 </script>
 
-<div class="px-2 py-2">
+<div bind:this={summary} class="px-2 py-2">
 	<ul>
-		<li>Total code time: {minutes} min {seconds} sec</li>
+		<li><strong>Total code time: {minutes} min {seconds} sec</strong></li>
 		<li>
-			Airway obtained: {$airway ? 'yes' : 'no'}
+			Airway obtained: {$airway ? `at ${getIntervalTime(codeStartTime)} min` : 'no'}
 		</li>
 		{#each items as item}
 			{#if item.value != 0}
@@ -87,12 +95,13 @@
 		{/each}
 
 		<li>
-			<strong>Rhythms so far:</strong>
+			<strong>Rhythms:</strong>
 			<ul>
 				{#each $rhythms as rhythm}
-					<li>{rhythm.name}: {getIntervalTime(codeStartTime)} min in.</li>
+					<li>{rhythm.name}: at {getIntervalTime(codeStartTime)} min</li>
 				{/each}
 			</ul>
 		</li>
 	</ul>
 </div>
+<Button title={'copy'} on:click={copy} />
