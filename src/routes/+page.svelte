@@ -42,14 +42,19 @@
 		</MedRow>
 		<MedRow medTime={epiTime}
 			><svelte:fragment slot="title">Next Epinephrine</svelte:fragment>
-			<div class="flex gap-2">
-				<Button
-					title={'Epinephrine'}
-					on:click={() => {
-						$epi = [...$epi, Date.now()];
-						epiCountDown();
-					}}
-				/>
+
+			<Button
+				title={'Epinephrine'}
+				on:click={() => {
+					$epi = [...$epi, Date.now()];
+					epiCountDown();
+				}}
+			/>
+		</MedRow>
+
+		<div>
+			<div class="px-4 pb-2">Shockable Rhythm</div>
+			<div class="flex w-full justify-end gap-2 px-4">
 				<Button
 					title={'Amiodarone'}
 					on:click={() => {
@@ -64,12 +69,6 @@
 						epiCountDown();
 					}}
 				/>
-			</div>
-		</MedRow>
-
-		<div>
-			<div class="px-4 pb-2">Shockable Rhythm</div>
-			<div class="flex w-full justify-end px-4">
 				<Button
 					title={'Shock'}
 					type="shock"

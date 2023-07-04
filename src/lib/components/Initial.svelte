@@ -18,7 +18,7 @@
 </script>
 
 <div>
-	<div class="mx-4 my-2">Code Started</div>
+	<div class="mx-4 mb-2 mt-20">Code Started</div>
 
 	<div class="mx-4 grid grid-cols-3 justify-evenly gap-2">
 		<Button title={'Now'} on:click={() => getCodeStartTime(0)} />
