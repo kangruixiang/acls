@@ -1,11 +1,28 @@
-export { default as Card } from './Card.svelte'
-export { default as Extra } from './Extra.svelte'
-export { default as Info } from './Info.svelte'
-export { default as Nav } from './Nav.svelte'
-export { default as Thumbnail } from './Thumbnail.svelte'
-export { default as ThumbnailItem } from './ThumbnailItem.svelte'
-export { default as Search } from './Search.svelte'
-export { default as Instruction } from './Instruction.svelte'
-export { default as TopNav } from './TopNav.svelte'
-export { default as YoutubeVideo } from './YoutubeVideo.svelte'
-export { default as Footer } from './Footer.svelte'
+import { writable } from 'svelte/store'
+
+export { default as Button } from './Button.svelte'
+export { default as MedRow } from './MedRow.svelte'
+export { default as Pulse } from './Pulse.svelte'
+export { default as HT } from './HT.svelte'
+export { default as Summary } from './Summary.svelte'
+export { default as Initial } from './Initial.svelte'
+export { default as HTCard } from './HTCard.svelte'
+
+export function getIntervalTime(startTime: number) {
+  const intervalTime = Math.floor((Date.now() - startTime) / 1000 / 60);
+  return intervalTime;
+}
+
+export const amio = writable([])
+export const epi = writable([])
+export const fluid = writable([])
+export const airway = writable(false)
+export const bicarb = writable([])
+export const dextrose = writable([])
+export const mag = writable([])
+export const ca = writable([])
+export const tpa = writable([])
+export const needle = writable([])
+export const pericard = writable([])
+export const shock = writable([])
+export const rhythms = writable([])

@@ -1,21 +1,76 @@
-<script>
-	import { inhalers } from '$lib/inhalers';
-	import { Thumbnail, ThumbnailItem, Search } from '$lib/components/index';
+<script lang="ts">
+	import {
+		Button,
+		MedRow,
+		Pulse,
+		HTCard,
+		Summary,
+		Initial,
+		epi,
+		amio,
+		shock
+	} from '$lib/components/index';
+	let epiTime = 3 * 60;
+	let pulseCheckTime = 2 * 60;
+	let codeStartTime: number;
+	let intervalTime = 0;
+	let epiIntervalID = null;
+
+	function epiCountDown() {
+		if (epiIntervalID) {
+			clearInterval(epiIntervalID);
+		}
+		epiTime = 3 * 60;
+		epiIntervalID = setInterval(() => {
+			epiTime--;
+		}, 1000);
+	}
 </script>
 
-<div
-	class="sticky top-12 z-10 border-b border-neutral-200 bg-neutral-100 py-2 dark:border-neutral-600 dark:bg-neutral-800 md:top-0"
->
-	<div class="mx-auto px-4 md:max-w-5xl">
-		<Search />
-	</div>
-</div>
+<div class="mt-6 flex flex-col gap-4">
+	<Summary {intervalTime} {codeStartTime} />
 
-<div class="mx-auto my-5 max-w-5xl">
-	<Thumbnail inhalers={$inhalers} let:inhaler>
-		<ThumbnailItem url={inhaler['brand name']} image={inhaler.image}>
-			<svelte:fragment>{inhaler['brand name']}</svelte:fragment>
-			<svelte:fragment slot="generic">{inhaler['generic']}</svelte:fragment>
-		</ThumbnailItem>
-	</Thumbnail>
+	<div class="my-2 border-t border-black" />
+
+	{#if !codeStartTime}
+		<Initial bind:codeStartTime bind:intervalTime />
+	{/if}
+
+	<MedRow medTime={pulseCheckTime}>
+		<svelte:fragment slot="title">Next Pulse Check</svelte:fragment><Pulse bind:pulseCheckTime />
+	</MedRow>
+	<MedRow medTime={epiTime}
+		><svelte:fragment slot="title">Next Epinephrine</svelte:fragment>
+		<Button
+			title={'Epinephrine'}
+			on:click={() => {
+				$epi = [...$epi, Date.now()];
+				epiCountDown();
+			}}
+		/>
+	</MedRow>
+
+	<div>
+		<div class="px-4 pb-2">Shockable Rhythm</div>
+		<div class="flex w-full justify-end gap-2 px-4">
+			<Button
+				title={'Amiodarone'}
+				on:click={() => {
+					$amio = [...$amio, Date.now()];
+					epiCountDown();
+				}}
+			/>
+			<Button
+				title={'Shock'}
+				on:click={() => {
+					$shock = [...$shock, Date.now()];
+					epiCountDown();
+				}}
+			/>
+		</div>
+	</div>
+
+	<div class="my-2 border-t border-black" />
+
+	<HTCard />
 </div>
