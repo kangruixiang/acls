@@ -8,6 +8,7 @@
 		Initial,
 		epi,
 		amio,
+		lido,
 		shock
 	} from '$lib/components/index';
 	let epiTime = 3 * 60;
@@ -41,18 +42,14 @@
 		</MedRow>
 		<MedRow medTime={epiTime}
 			><svelte:fragment slot="title">Next Epinephrine</svelte:fragment>
-			<Button
-				title={'Epinephrine'}
-				on:click={() => {
-					$epi = [...$epi, Date.now()];
-					epiCountDown();
-				}}
-			/>
-		</MedRow>
-
-		<div>
-			<div class="px-4 pb-2">Shockable Rhythm</div>
-			<div class="flex w-full justify-end gap-2 px-4">
+			<div class="flex gap-2">
+				<Button
+					title={'Epinephrine'}
+					on:click={() => {
+						$epi = [...$epi, Date.now()];
+						epiCountDown();
+					}}
+				/>
 				<Button
 					title={'Amiodarone'}
 					on:click={() => {
@@ -61,10 +58,23 @@
 					}}
 				/>
 				<Button
+					title={'Lidocaine'}
+					on:click={() => {
+						$lido = [...$lido, Date.now()];
+						epiCountDown();
+					}}
+				/>
+			</div>
+		</MedRow>
+
+		<div>
+			<div class="px-4 pb-2">Shockable Rhythm</div>
+			<div class="flex w-full justify-end px-4">
+				<Button
 					title={'Shock'}
+					type="shock"
 					on:click={() => {
 						$shock = [...$shock, Date.now()];
-						epiCountDown();
 					}}
 				/>
 			</div>

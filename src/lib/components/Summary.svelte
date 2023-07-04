@@ -2,6 +2,7 @@
 	import {
 		epi,
 		amio,
+		lido,
 		fluid,
 		airway,
 		mag,
@@ -33,6 +34,10 @@
 		{
 			name: 'amiodarone',
 			value: $amio.length
+		},
+		{
+			name: 'lidocaine',
+			value: $lido.length
 		},
 		{
 			name: 'intravenous fluid',

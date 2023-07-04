@@ -14,6 +14,7 @@ export function getIntervalTime(startTime: number) {
 }
 
 export const amio = writable([])
+export const lido = writable([])
 export const epi = writable([])
 export const fluid = writable([])
 export const airway = writable(false)
