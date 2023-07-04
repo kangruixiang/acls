@@ -36,39 +36,41 @@
 		<Initial bind:codeStartTime bind:intervalTime />
 	{/if}
 
-	<MedRow medTime={pulseCheckTime}>
-		<svelte:fragment slot="title">Next Pulse Check</svelte:fragment><Pulse bind:pulseCheckTime />
-	</MedRow>
-	<MedRow medTime={epiTime}
-		><svelte:fragment slot="title">Next Epinephrine</svelte:fragment>
-		<Button
-			title={'Epinephrine'}
-			on:click={() => {
-				$epi = [...$epi, Date.now()];
-				epiCountDown();
-			}}
-		/>
-	</MedRow>
+	{#if codeStartTime}
+		<MedRow medTime={pulseCheckTime}>
+			<svelte:fragment slot="title">Next Pulse Check</svelte:fragment><Pulse bind:pulseCheckTime />
+		</MedRow>
+		<MedRow medTime={epiTime}
+			><svelte:fragment slot="title">Next Epinephrine</svelte:fragment>
+			<Button
+				title={'Epinephrine'}
+				on:click={() => {
+					$epi = [...$epi, Date.now()];
+					epiCountDown();
+				}}
+			/>
+		</MedRow>
 
-	<div>
-		<div class="px-4 pb-2">Shockable Rhythm</div>
-		<div class="flex w-full justify-end gap-2 px-4">
-			<Button
-				title={'Amiodarone'}
-				on:click={() => {
-					$amio = [...$amio, Date.now()];
-					epiCountDown();
-				}}
-			/>
-			<Button
-				title={'Shock'}
-				on:click={() => {
-					$shock = [...$shock, Date.now()];
-					epiCountDown();
-				}}
-			/>
+		<div>
+			<div class="px-4 pb-2">Shockable Rhythm</div>
+			<div class="flex w-full justify-end gap-2 px-4">
+				<Button
+					title={'Amiodarone'}
+					on:click={() => {
+						$amio = [...$amio, Date.now()];
+						epiCountDown();
+					}}
+				/>
+				<Button
+					title={'Shock'}
+					on:click={() => {
+						$shock = [...$shock, Date.now()];
+						epiCountDown();
+					}}
+				/>
+			</div>
 		</div>
-	</div>
+	{/if}
 
 	<div class="my-2 border-t border-black" />
 

@@ -2,6 +2,7 @@
 	import { Button, rhythms } from '$lib/components/index';
 	let pulseIntervalID;
 	export let pulseCheckTime = 2 * 60;
+
 	function pulseCheckCountDown() {
 		if (pulseIntervalID) {
 			clearInterval(pulseIntervalID);

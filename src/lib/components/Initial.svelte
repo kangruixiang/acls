@@ -11,8 +11,6 @@
 		return codeStartTime;
 	}
 
-	
-
 	function startTimer() {
 		setInterval(() => {
 			intervalTime = Date.now() - codeStartTime;
@@ -23,7 +21,7 @@
 <div>
 	<div class="mx-4 my-2">Code Started</div>
 
-	<div class="mx-4 flex justify-evenly gap-2">
+	<div class="mx-4 grid grid-cols-3 justify-evenly gap-2">
 		<Button title={'Now'} on:click={() => getCodeStartTime(0)} />
 		<Button title={'1 min ago'} on:click={() => getCodeStartTime(1)} />
 		<Button title={'2 min ago'} on:click={() => getCodeStartTime(2)} />
