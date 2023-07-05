@@ -29,6 +29,8 @@
 		epiIntervalID = setInterval(() => {
 			localTime--;
 		}, 1000);
+
+		pause = false;
 	}
 
 	function pulseCheckCountDown(pulse) {
@@ -47,6 +49,8 @@
 		pulseIntervalID = setInterval(() => {
 			localTime--;
 		}, 1000);
+
+		pause = false;
 	}
 
 	function pauseIntervals() {
@@ -77,10 +81,12 @@
 	<div class="pb-2">
 		<slot name="title" />
 	</div>
-	<div class="flex w-full justify-between px-4">
+	<div class="flex w-full justify-between space-x-4 px-4">
 		{#if localTime}
 			<div
-				class="{localTime > 0 ? 'bg-green-200' : 'bg-red-200'} px-4 py-4 text-xl text-neutral-800"
+				class="{localTime > 0
+					? 'bg-green-200'
+					: 'bg-red-200'} whitespace-nowrap px-4 py-4 text-xl text-neutral-800"
 			>
 				{#if minutes}{minutes} m{/if}
 				{seconds} s

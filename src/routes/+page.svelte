@@ -20,6 +20,7 @@
 	}
 
 	$: codeStartTime && !pause ? startTimer() : '';
+	$: console.log(pause);
 </script>
 
 <div class="mt-6 flex flex-col gap-4">
@@ -31,21 +32,21 @@
 		<Summary {intervalTime} {codeStartTime} />
 
 		<div class="my-2 border-t border-black" />
-		<MedRow time={120} {pause} let:pulseCheckCountDown>
+		<MedRow time={120} bind:pause let:pulseCheckCountDown>
 			<svelte:fragment slot="title">Next Pulse Check</svelte:fragment>
 			<div class="flex justify-end gap-2">
 				<Button on:click={() => pulseCheckCountDown('PEA')}>PEA</Button>
-				<Button on:click={() => pulseCheckCountDown('Asystole')}>Asystole</Button>
+				<Button on:click={() => pulseCheckCountDown('Asystole')}>Asys</Button>
 				<Button on:click={() => pulseCheckCountDown('VT/VF')}>VT/VF</Button>
 				<Button on:click={() => pulseCheckCountDown('ROSC')}>ROSC</Button>
 			</div>
 		</MedRow>
-		<MedRow time={180} {pause} let:epiCountDown
+		<MedRow time={180} bind:pause let:epiCountDown
 			><svelte:fragment slot="title">Next Epinephrine</svelte:fragment>
 			<Button on:click={() => epiCountDown('epi')}>Epinephrine</Button>
 		</MedRow>
 
-		<MedRow {pause} let:epiCountDown>
+		<MedRow bind:pause let:epiCountDown>
 			<svelte:fragment slot="title">Shockable Rhythm</svelte:fragment>
 			<div class="flex w-full justify-end gap-2">
 				<Button on:click={() => epiCountDown('amio')}>Amiodarone</Button>

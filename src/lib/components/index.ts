@@ -2,7 +2,6 @@ import { writable } from 'svelte/store'
 
 export { default as Button } from './Button.svelte'
 export { default as MedRow } from './MedRow.svelte'
-export { default as Pulse } from './Pulse.svelte'
 export { default as HT } from './HT.svelte'
 export { default as Summary } from './Summary.svelte'
 export { default as Initial } from './Initial.svelte'
