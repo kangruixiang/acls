@@ -86,7 +86,7 @@
 		<slot name="title" />
 	</div>
 	<div class="flex w-full justify-between space-x-4 px-4">
-		{#if typeof localTime != 'undefined'}
+		{#if typeof localTime == 'number'}
 			<div
 				class="{localTime > 0
 					? 'bg-green-200'
