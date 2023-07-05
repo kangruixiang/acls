@@ -79,6 +79,7 @@
 	$: seconds = Math.round((localTime / 60 - minutes) * 60);
 	$: minutes > 0 ? (minutes = minutes) : (minutes = 0);
 	$: pause ? pauseIntervals() : '';
+	$: console.log(localTime);
 </script>
 
 <div>
@@ -86,13 +87,14 @@
 		<slot name="title" />
 	</div>
 	<div class="flex w-full justify-between space-x-4 px-4">
-		{#if typeof localTime == 'number'}
+		{#if localTime || localTime === 0}
 			<div
 				class="{localTime > 0
 					? 'bg-green-200'
 					: 'bg-red-200'} whitespace-nowrap px-4 py-4 text-xl text-neutral-800"
 			>
 				{#if minutes}{minutes} m{/if}
+
 				{seconds} s
 			</div>
 		{/if}
