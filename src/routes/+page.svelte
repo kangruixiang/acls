@@ -20,7 +20,6 @@
 	}
 
 	$: codeStartTime && !pause ? startTimer() : '';
-	$: console.log(pause);
 </script>
 
 <div class="mt-6 flex flex-col gap-4">
