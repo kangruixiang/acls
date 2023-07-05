@@ -1,5 +1,5 @@
 <script>
-	import { epi, amio, lido, rhythms } from '$lib/components/index';
+	import { epi, amio, lido, rhythms, shock } from '$lib/components/index';
 	export let time;
 	export let pause = false;
 	let localTime = time;
@@ -20,6 +20,10 @@
 		}
 		if (med === 'lido') {
 			$lido = [...$lido, Date.now()];
+		}
+		if (med === 'shock') {
+			$shock = [...$shock, Date.now()];
+			return;
 		}
 
 		if (epiIntervalID) {
@@ -82,7 +86,7 @@
 		<slot name="title" />
 	</div>
 	<div class="flex w-full justify-between space-x-4 px-4">
-		{#if localTime}
+		{#if typeof localTime != 'undefined'}
 			<div
 				class="{localTime > 0
 					? 'bg-green-200'
