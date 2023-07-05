@@ -104,4 +104,4 @@
 		</li>
 	</ul>
 </div>
-<Button title={'copy'} on:click={copy} />
+<Button on:click={copy}>copy</Button>

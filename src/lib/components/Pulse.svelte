@@ -1,28 +1,27 @@
 <script>
 	import { Button, rhythms } from '$lib/components/index';
 
-	export let pulseCheckTime;
-	let pulseIntervalID = null;
+	// export let pulseCheckTime;
+	// let pulseIntervalID = null;
 
 	pulseIntervalID = setInterval(() => {
 		pulseCheckTime--;
 	}, 1000);
 
-	function pulseCheckCountDown() {
-		if (pulseIntervalID) {
-			clearInterval(pulseIntervalID);
-		}
-		pulseCheckTime = 120;
+	// function pulseCheckCountDown() {
+	// 	if (pulseIntervalID) {
+	// 		clearInterval(pulseIntervalID);
+	// 	}
+	// 	pulseCheckTime = 120;
 
-		pulseIntervalID = setInterval(() => {
-			pulseCheckTime--;
-		}, 1000);
-	}
+	// 	pulseIntervalID = setInterval(() => {
+	// 		pulseCheckTime--;
+	// 	}, 1000);
+	// }
 </script>
 
 <div class="flex space-x-2">
 	<Button
-		title={'PEA'}
 		on:click={() => {
 			$rhythms = [
 				...$rhythms,
@@ -32,10 +31,21 @@
 				}
 			];
 			pulseCheckCountDown();
-		}}
-	/>
+		}}>PEA</Button
+	>
 	<Button
-		title={'VT/VF'}
+		on:click={() => {
+			$rhythms = [
+				...$rhythms,
+				{
+					name: 'Asystole',
+					time: Date.now()
+				}
+			];
+			pulseCheckCountDown();
+		}}>Asystole</Button
+	>
+	<Button
 		on:click={() => {
 			$rhythms = [
 				...$rhythms,
@@ -45,10 +55,9 @@
 				}
 			];
 			pulseCheckCountDown();
-		}}
-	/>
+		}}>VT/VF</Button
+	>
 	<Button
-		title={'ROSC'}
 		on:click={() => {
 			$rhythms = [
 				...$rhythms,
@@ -58,6 +67,6 @@
 				}
 			];
 			pulseCheckCountDown();
-		}}
-	/>
+		}}>ROSC</Button
+	>
 </div>

@@ -97,7 +97,7 @@
 	{#each HandT as item}
 		<HT title={item.cause}>
 			{#if item.treatment}
-				<Button title={item.treatment} on:click={item.add} />
+				<Button on:click={item.add}>{item.treatment}</Button>
 			{/if}
 		</HT>
 	{/each}

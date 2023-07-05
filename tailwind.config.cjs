@@ -1,7 +1,9 @@
-const colors = require('tailwindcss/colors');
-
 const config = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
+
+	future: {
+		hoverOnlyWhenSupported: true
+	},
 
 	theme: {
 		container: { center: true },
