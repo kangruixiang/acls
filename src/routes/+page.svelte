@@ -30,38 +30,40 @@
 	{#if codeStartTime}
 		<Summary {intervalTime} {codeStartTime} />
 
+		<div class="w-full px-4">
+			<Button grow={true} on:click={pauseCode}>
+				{#if pause}
+					Restart
+				{:else}
+					End
+				{/if}
+				Code</Button
+			>
+		</div>
+
 		<div class="my-2 border-t border-black" />
-		<MedRow time={120} bind:pause let:pulseCheckCountDown>
+		<MedRow time={120} bind:pause rowType="pulse" let:pulseCheckCountDown>
 			<svelte:fragment slot="title">Next Pulse Check</svelte:fragment>
-			<div class="flex justify-end gap-2">
-				<Button on:click={() => pulseCheckCountDown('PEA')}>PEA</Button>
-				<Button on:click={() => pulseCheckCountDown('Asystole')}>Asys</Button>
-				<Button on:click={() => pulseCheckCountDown('VT/VF')}>VT/VF</Button>
-				<Button on:click={() => pulseCheckCountDown('ROSC')}>ROSC</Button>
+			<div class="flex justify-between gap-2">
+				<Button grow={true} on:click={() => pulseCheckCountDown('PEA')}>PEA</Button>
+				<Button grow={true} on:click={() => pulseCheckCountDown('Asystole')}>Asystole</Button>
+				<Button grow={true} on:click={() => pulseCheckCountDown('VT/VF')}>VT/VF</Button>
+				<Button grow={true} on:click={() => pulseCheckCountDown('ROSC')}>ROSC</Button>
 			</div>
 		</MedRow>
-		<MedRow time={180} bind:pause let:epiCountDown
+		<MedRow time={180} bind:pause let:epiCountDown 
 			><svelte:fragment slot="title">Next Epinephrine</svelte:fragment>
 			<Button on:click={() => epiCountDown('epi')}>Epinephrine</Button>
 		</MedRow>
 
-		<MedRow bind:pause let:epiCountDown>
+		<MedRow time={180} displayTime={false} bind:pause let:epiCountDown>
 			<svelte:fragment slot="title">Shockable Rhythm</svelte:fragment>
 			<div class="flex w-full justify-end gap-2">
-				<Button on:click={() => epiCountDown('amio')}>Amiodarone</Button>
-				<Button on:click={() => epiCountDown('lido')}>Lidocaine</Button>
-				<Button type="shock" on:click={() => epiCountDown('shock')}>Shock</Button>
+				<Button grow={true} on:click={() => epiCountDown('amio')}>Amiodarone</Button>
+				<Button grow={true} on:click={() => epiCountDown('lido')}>Lidocaine</Button>
+				<Button grow={true} type="shock" on:click={() => epiCountDown('shock')}>Shock</Button>
 			</div>
 		</MedRow>
-
-		<Button on:click={pauseCode}>
-			{#if pause}
-				Restart
-			{:else}
-				End
-			{/if}
-			Code</Button
-		>
 
 		<div class="my-2 border-t border-black" />
 

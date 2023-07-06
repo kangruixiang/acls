@@ -53,9 +53,9 @@
 </script>
 
 <div>
-	<div class="mx-4 mb-2 mt-20">Code Started</div>
+	<div class="mb-2 mt-20 px-4">Code Started</div>
 
-	<div class="mx-4 grid grid-cols-3 justify-evenly gap-2">
+	<div class="grid grid-cols-1 justify-evenly gap-2 px-4">
 		{#each codeTimes as codeTime}
 			<Button on:click={() => getCodeStartTime(codeTime.time)}>{codeTime.name}</Button>
 		{/each}

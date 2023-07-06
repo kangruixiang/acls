@@ -1,15 +1,13 @@
 <script>
 	import { epi, amio, lido, rhythms, shock } from '$lib/components/index';
-	export let time;
+	export let time = 120;
 	export let pause = false;
-	let localTime = time;
+	export let rowType = 'med';
+	export let displayTime = true;
 
+	let localTime = time;
 	let pulseIntervalID = null;
 	let epiIntervalID = null;
-
-	// pulseIntervalID = setInterval(() => {
-	// 	localTime--;
-	// }, 1000);
 
 	function epiCountDown(med) {
 		if (med === 'epi') {
@@ -67,9 +65,20 @@
 	}
 
 	function restartIntervals() {
-		pulseIntervalID = setInterval(() => {
-			localTime--;
-		}, 1000);
+		pause = false;
+		localTime = time;
+		if (rowType == 'pulse') {
+			if (pulseIntervalID) {
+				clearInterval(pulseIntervalID);
+			}
+			pulseIntervalID = setInterval(() => {
+				localTime--;
+			}, 1000);
+			return;
+		}
+		if (epiIntervalID) {
+			clearInterval(epiIntervalID);
+		}
 		epiIntervalID = setInterval(() => {
 			localTime--;
 		}, 1000);
@@ -79,26 +88,46 @@
 	$: seconds = Math.round((localTime / 60 - minutes) * 60);
 	$: minutes > 0 ? (minutes = minutes) : (minutes = 0);
 	$: pause ? pauseIntervals() : '';
-	$: console.log(localTime);
 </script>
 
-<div>
-	<div class="pb-2">
-		<slot name="title" />
-	</div>
-	<div class="flex w-full justify-between space-x-4 px-4">
-		{#if localTime || localTime === 0}
-			<div
-				class="{localTime > 0
-					? 'bg-green-200'
-					: 'bg-red-200'} whitespace-nowrap px-4 py-4 text-xl text-neutral-800"
-			>
-				{#if minutes}{minutes} m{/if}
+<div class="flex w-full flex-col justify-center gap-2 px-4 py-1">
+	<div id="countdown_and_timer" class="flex gap-2">
+		<div class="grow">
+			<slot name="title" />
+		</div>
+		{#if displayTime}
+			<div id="countdown_and_refresh" class="mb-2 flex items-center">
+				<div
+					class="{localTime > 0
+						? 'bg-green-200'
+						: 'bg-red-200'} flex items-center whitespace-nowrap px-8 py-4 text-xl text-neutral-800"
+				>
+					{#if minutes}{minutes} m{/if}
 
-				{seconds} s
+					{seconds} s
+				</div>
+				<div
+					class="flex h-full cursor-pointer items-center bg-neutral-50 px-4 dark:bg-neutral-800"
+					on:keydown
+					on:click={restartIntervals}
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="h-6 w-6"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"
+						/>
+					</svg>
+				</div>
 			</div>
 		{/if}
-
-		<slot {epiCountDown} {pulseCheckCountDown} />
 	</div>
+	<slot {epiCountDown} {pulseCheckCountDown} />
 </div>

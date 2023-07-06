@@ -82,7 +82,7 @@
 	}
 </script>
 
-<div bind:this={summary} class="px-2 py-2">
+<div bind:this={summary} class="flex items-end justify-between px-4 py-2">
 	<ul>
 		<li><strong>Total code time: {minutes} min {seconds} sec</strong></li>
 		<li>
@@ -103,5 +103,7 @@
 			</ul>
 		</li>
 	</ul>
+	<div class="">
+		<Button on:click={copy}>copy</Button>
+	</div>
 </div>
-<Button on:click={copy}>copy</Button>

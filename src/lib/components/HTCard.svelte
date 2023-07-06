@@ -92,13 +92,15 @@
 	];
 </script>
 
-<h2>H's and T's</h2>
-<div class="flex flex-col">
-	{#each HandT as item}
-		<HT title={item.cause}>
-			{#if item.treatment}
-				<Button on:click={item.add}>{item.treatment}</Button>
-			{/if}
-		</HT>
-	{/each}
+<div class="px-4">
+	<h2>H's and T's</h2>
+	<div class="flex flex-col">
+		{#each HandT as item}
+			<HT title={item.cause}>
+				{#if item.treatment}
+					<Button on:click={item.add}>{item.treatment}</Button>
+				{/if}
+			</HT>
+		{/each}
+	</div>
 </div>
