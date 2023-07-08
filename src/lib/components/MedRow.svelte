@@ -11,16 +11,40 @@
 
 	function epiCountDown(med) {
 		if (med === 'epi') {
-			$epi = [...$epi, Date.now()];
+			$epi = [
+				...$epi,
+				{
+					name: 'epinephrine',
+					time: Date.now()
+				}
+			];
 		}
 		if (med === 'amio') {
-			$amio = [...$amio, Date.now()];
+			$amio = [
+				...$amio,
+				{
+					name: 'amiodarone',
+					time: Date.now()
+				}
+			];
 		}
 		if (med === 'lido') {
-			$lido = [...$lido, Date.now()];
+			$lido = [
+				...$lido,
+				{
+					name: 'lidocaine',
+					time: Date.now()
+				}
+			];
 		}
 		if (med === 'shock') {
-			$shock = [...$shock, Date.now()];
+			$shock = [
+				...$shock,
+				{
+					name: 'cardioversion',
+					time: Date.now()
+				}
+			];
 			return;
 		}
 

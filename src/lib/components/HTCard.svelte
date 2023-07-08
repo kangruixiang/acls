@@ -18,42 +18,78 @@
 			cause: 'Hypoxia',
 			treatment: 'Advanced Airway',
 			add: () => {
-				$airway = Date.now();
+				$airway = [
+					...$airway,
+					{
+						name: 'airway obtained',
+						time: Date.now()
+					}
+				];
 			}
 		},
 		{
 			cause: 'Hypovolemia',
 			treatment: 'Fluid',
 			add: () => {
-				$fluid = [...$fluid, Date.now()];
+				$fluid = [
+					...$fluid,
+					{
+						name: 'fluid',
+						time: Date.now()
+					}
+				];
 			}
 		},
 		{
 			cause: 'Hydrogen Ion (acidosis)',
 			treatment: 'Bicarb',
 			add: () => {
-				$bicarb = [...$bicarb, Date.now()];
+				$bicarb = [
+					...$bicarb,
+					{
+						name: 'bicarb',
+						time: Date.now()
+					}
+				];
 			}
 		},
 		{
 			cause: 'Hypoglycemia',
 			treatment: 'Dextrose',
 			add: () => {
-				$dextrose = [...$dextrose, Date.now()];
+				$dextrose = [
+					...$dextrose,
+					{
+						name: 'dextrose',
+						time: Date.now()
+					}
+				];
 			}
 		},
 		{
 			cause: 'Hypokalemia',
 			treatment: 'Magnesium',
 			add: () => {
-				$mag = [...$mag, Date.now()];
+				$mag = [
+					...$mag,
+					{
+						name: 'magnesium',
+						time: Date.now()
+					}
+				];
 			}
 		},
 		{
 			cause: 'Hyperkalemia',
 			treatment: 'Calcium',
 			add: () => {
-				$ca = [...$ca, Date.now()];
+				$ca = [
+					...$ca,
+					{
+						name: 'calcium',
+						time: Date.now()
+					}
+				];
 			}
 		},
 		{
@@ -64,7 +100,13 @@
 			cause: 'Thrombosis (PE)',
 			treatment: 'TPA',
 			add: () => {
-				$tpa = [...$tpa, Date.now()];
+				$tpa = [
+					...$tpa,
+					{
+						name: 'tpa',
+						time: Date.now()
+					}
+				];
 			}
 		},
 		{
@@ -75,14 +117,26 @@
 			cause: 'Tension Pneumothorax',
 			treatment: 'Needle Decompress',
 			add: () => {
-				$needle = [...$needle, Date.now()];
+				$needle = [
+					...$needle,
+					{
+						name: 'needle decompression',
+						time: Date.now()
+					}
+				];
 			}
 		},
 		{
 			cause: 'Tamponade',
 			treatment: 'Pericardiocentesis',
 			add: () => {
-				$pericard = [...$pericard, Date.now()];
+				$pericard = [
+					...$pericard,
+					{
+						name: 'pericardiocentesis',
+						time: Date.now()
+					}
+				];
 			}
 		},
 		{
